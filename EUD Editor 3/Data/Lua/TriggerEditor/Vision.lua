@@ -16,6 +16,15 @@ Sets [Player]'s vision of [DestPlayer] to [State].
 Vision
 @param.Player.TrgPlayer
 @param.DestPlayer.TrgPlayer
+@param.State.TrgSwitchState
+
+@Language.zh-CN
+@Summary
+将 [Player] 对 [DestPlayer] 的视野设为 [State]。
+@Group
+视野
+@param.Player.TrgPlayer
+@param.DestPlayer.TrgPlayer
 @param.State.TrgSwitchState
 ]================================]
 function SetVision(Player, DestPlayer, State) --시야/TrgPlayer,TrgPlayer,TrgSwitchState/[Player]에게 [DestPlayer]의 시야를 [State]합니다.
@@ -58,6 +67,14 @@ Returns whether [Player] has vision of [DestPlayer].
 @Group
 Vision
 @param.Player.TrgPlayer
+@param.DestPlayer.TrgPlayer
+
+@Language.zh-CN
+@Summary
+检查 [Player] 是否能看到 [DestPlayer]。
+@Group
+视野
+@param.Player.TrgPlayer
 @param.DestPlayer.TrgPlayer
 ]================================]
 function GetVision(Player, DestPlayer) --시야/TrgPlayer,TrgPlayer/[Player]가 [DestPlayer]를 볼 수 있는지 확인합니다.
@@ -91,6 +108,13 @@ end
 Returns the EPD address of [Player]'s vision data.
 @Group
 Vision
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的视野地址。
+@Group
+视野
 @param.Player.TrgPlayer
 ]================================]
 function VisionEPD(Player) --시야/TrgPlayer/[Player]의 시야 오프셋을 반환합니다.

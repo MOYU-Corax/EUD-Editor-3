@@ -18,6 +18,16 @@ Tech
 @param.Tech.Tech
 @param.Player.TrgPlayer
 @param.Modifier.TrgModifier
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+将 [Player] 的 [Tech] 当前值以 [Modifier] 方式调整 [Amount]。
+@Group
+科技
+@param.Tech.Tech
+@param.Player.TrgPlayer
+@param.Modifier.TrgModifier
 @param.Amount.Number
 ]================================]
 function SetTech(Tech, Player, Modifier, Amount) --테크/Tech,TrgPlayer,TrgModifier,Number/[Player]의 [Tech]의 현재값을 [Amount]만큼 [Modifier]합니다.
@@ -71,6 +81,16 @@ Tech
 @param.Tech.Tech
 @param.Player.TrgPlayer
 @param.Comparison.TrgComparison
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+判断 [Player] 的 [Tech] 当前值是否 [Comparison] [Amount]。
+@Group
+科技
+@param.Tech.Tech
+@param.Player.TrgPlayer
+@param.Comparison.TrgComparison
 @param.Amount.Number
 ]================================]
 function CurrentTech(Tech, Player, Comparison, Amount) --테크/Tech,TrgPlayer,TrgComparison,Number/[Player]의 [Tech]의 현재값이 [Comparison] [Amount]인지 확인합니다.
@@ -115,6 +135,14 @@ Returns the current level of [Tech] for [Player].
 @Group
 Tech
 @param.Tech.Tech
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Tech] 当前值。
+@Group
+科技
+@param.Tech.Tech
 @param.Player.TrgPlayer
 ]================================]
 function GetTech(Tech, Player) --테크/Tech,TrgPlayer/[Player]의 [Tech]의 현재값을 반환합니다.
@@ -148,6 +176,14 @@ end
 Returns the EPD address of the current level of [Tech] for [Player].
 @Group
 Tech
+@param.Tech.Tech
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Tech] 当前值地址的 EPD。
+@Group
+科技
 @param.Tech.Tech
 @param.Player.TrgPlayer
 ]================================]
@@ -189,6 +225,14 @@ end
 Returns the address of the current level of [Tech] for [Player].
 @Group
 Tech
+@param.Tech.Tech
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Tech] 当前值地址。
+@Group
+科技
 @param.Tech.Tech
 @param.Player.TrgPlayer
 ]================================]
@@ -233,6 +277,16 @@ end
 Modifies the maximum level of [Tech] for [Player]: [Modifier] [Amount].
 @Group
 Tech
+@param.Tech.Tech
+@param.Player.TrgPlayer
+@param.Modifier.TrgModifier
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+将 [Player] 的 [Tech] 最大值以 [Modifier] 方式调整 [Amount]。
+@Group
+科技
 @param.Tech.Tech
 @param.Player.TrgPlayer
 @param.Modifier.TrgModifier
@@ -288,6 +342,16 @@ Tech
 @param.Tech.Tech
 @param.Player.TrgPlayer
 @param.Comparison.TrgComparison
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+判断 [Player] 的 [Tech] 最大值是否 [Comparison] [Amount]。
+@Group
+科技
+@param.Tech.Tech
+@param.Player.TrgPlayer
+@param.Comparison.TrgComparison
 @param.Amount.Number
 ]================================]
 function CurrentTechMax(Tech, Player, Comparison, Amount) --테크/Tech,TrgPlayer,TrgComparison,Number/[Player]의 [Tech]의 최대값이 [Comparison] [Amount]인지 확인합니다.
@@ -332,6 +396,14 @@ Returns the maximum level of [Tech] for [Player].
 @Group
 Tech
 @param.Tech.Tech
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Tech] 最大值。
+@Group
+科技
+@param.Tech.Tech
 @param.Player.TrgPlayer
 ]================================]
 function GetTechMax(Tech, Player) --테크/Tech,TrgPlayer/[Player]의 [Tech]의 최대값을 반환합니다.
@@ -366,6 +438,14 @@ end
 Returns the EPD address of the maximum level of [Tech] for [Player].
 @Group
 Tech
+@param.Tech.Tech
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Tech] 最大值地址的 EPD。
+@Group
+科技
 @param.Tech.Tech
 @param.Player.TrgPlayer
 ]================================]
@@ -408,6 +488,14 @@ end
 Returns the address of the maximum level of [Tech] for [Player].
 @Group
 Tech
+@param.Tech.Tech
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Tech] 最大值地址。
+@Group
+科技
 @param.Tech.Tech
 @param.Player.TrgPlayer
 ]================================]

@@ -83,10 +83,10 @@ Partial Public Class ProjectData
             Else
                 stm.Close()
 
-                Tool.CustomMsgBox("호환성 경고" & vbCrLf &
-                       "e2s파일을 불러올 경우 일부 에러가 발생할 수 있습니다." & vbCrLf &
-                       "플러그인 로드 안됨" & vbCrLf &
-                       "TE로드 안됨", MessageBoxButton.OK, MessageBoxImage.Exclamation)
+                Tool.CustomMsgBox("兼容性警告" & vbCrLf &
+                       "加载 e2s 文件时可能出现部分错误。" & vbCrLf &
+                       "插件无法加载" & vbCrLf &
+                       "TE 无法加载", MessageBoxButton.OK, MessageBoxImage.Exclamation)
 
                 _pjdata = New ProjectData
                 _pjdata.NewFIle()

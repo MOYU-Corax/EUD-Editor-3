@@ -10,7 +10,13 @@
 @Summary
 Refresh the button.
 @Group
-Basic
+Basic
+
+@Language.zh-CN
+@Summary
+重新绘制按钮。
+@Group
+一般
 ]================================]
 function BtnRefresh()
 	echo([[if (Memory(0x628438, AtLeast, 0x59CCA8)) {

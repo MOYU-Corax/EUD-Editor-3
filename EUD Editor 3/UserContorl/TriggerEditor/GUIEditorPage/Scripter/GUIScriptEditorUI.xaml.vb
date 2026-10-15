@@ -448,7 +448,7 @@ Public Class GUIScriptEditorUI
 
 
                 If Not scr.IsDeleteAble Then
-                    SnackBarDialog("옮길 수 없는 아이템입니다.")
+                    SnackBarDialog("无法移动该项。")
                     Return
                 End If
 
@@ -483,7 +483,7 @@ Public Class GUIScriptEditorUI
 
                 ntreeview.IsSelected = True
             Else
-                SnackBarDialog("하나의 아이템만 옮길 수 있습니다.")
+                SnackBarDialog("一次只能移动一项。")
             End If
         End If
     End Sub
@@ -511,7 +511,7 @@ Public Class GUIScriptEditorUI
 
 
                 If Not scr.IsDeleteAble Then
-                    SnackBarDialog("옮길 수 없는 아이템입니다.")
+                    SnackBarDialog("无法移动该项。")
                     Return
                 End If
 
@@ -546,7 +546,7 @@ Public Class GUIScriptEditorUI
 
                 ntreeview.IsSelected = True
             Else
-                SnackBarDialog("하나의 아이템만 옮길 수 있습니다.")
+                SnackBarDialog("一次只能移动一项。")
             End If
         End If
     End Sub

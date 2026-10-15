@@ -12,6 +12,13 @@
 Converts [Key] to a safe string.
 @Group
 Key Detection
+@param.Key.Key
+
+@Language.zh-CN
+@Summary
+将 [Key] 转换为安全字符。
+@Group
+按键识别
 @param.Key.Key
 ]================================]
 function KeyParse(Key)
@@ -51,6 +58,15 @@ Detects the moment [Player] presses [Key].
 Key Detection
 @param.Player.TrgPlayer
 Target player.
+@param.Key.Key
+
+@Language.zh-CN
+@Summary
+检测 [Player] 的按键 [Key] 被按下的瞬间。
+@Group
+按键识别
+@param.Player.TrgPlayer
+目标玩家。
 @param.Key.Key
 ]================================]
 function KeyDown(Player, Key)
@@ -81,6 +97,15 @@ Detects the moment [Player] releases [Key].
 Key Detection
 @param.Player.TrgPlayer
 Target player.
+@param.Key.Key
+
+@Language.zh-CN
+@Summary
+检测 [Player] 的按键 [Key] 被松开的瞬间。
+@Group
+按键识别
+@param.Player.TrgPlayer
+目标玩家。
 @param.Key.Key
 ]================================]
 function KeyUp(Player, Key)
@@ -111,6 +136,15 @@ Detects if [Player] is holding [Key].
 Key Detection
 @param.Player.TrgPlayer
 Target player.
+@param.Key.Key
+
+@Language.zh-CN
+@Summary
+检测 [Player] 是否按住按键 [Key]。
+@Group
+按键识别
+@param.Player.TrgPlayer
+目标玩家。
 @param.Key.Key
 ]================================]
 function KeyPress(Player, Key)
@@ -140,6 +174,15 @@ Detects the moment [Player] presses mouse [Button].
 Mouse Detection
 @param.Player.TrgPlayer
 Target player.
+@param.Button.Button
+
+@Language.zh-CN
+@Summary
+检测 [Player] 的鼠标 [Button] 被按下的瞬间。
+@Group
+鼠标
+@param.Player.TrgPlayer
+目标玩家。
 @param.Button.Button
 ]================================]
 function MouseDown(Player, Button)
@@ -170,6 +213,15 @@ Detects the moment [Player] releases mouse [Button].
 Mouse Detection
 @param.Player.TrgPlayer
 Target player.
+@param.Button.Button
+
+@Language.zh-CN
+@Summary
+检测 [Player] 的鼠标 [Button] 被松开的瞬间。
+@Group
+鼠标
+@param.Player.TrgPlayer
+目标玩家。
 @param.Button.Button
 ]================================]
 function MouseUp(Player, Button)
@@ -200,6 +252,15 @@ Detects if [Player] is holding mouse [Button].
 Mouse Detection
 @param.Player.TrgPlayer
 Target player.
+@param.Button.Button
+
+@Language.zh-CN
+@Summary
+检测 [Player] 是否按住鼠标 [Button]。
+@Group
+鼠标
+@param.Player.TrgPlayer
+目标玩家。
 @param.Button.Button
 ]================================]
 function MousePress(Player, Button)
@@ -224,7 +285,13 @@ end
 @Summary
 Returns the line number under the mouse cursor in text.
 @Group
-Mouse Detection
+Mouse Detection
+
+@Language.zh-CN
+@Summary
+返回鼠标所在文本的行号。
+@Group
+鼠标
 ]================================]
 function LocalMouseLine()
 	echo("((dwread_epd(EPD(0x6CDDC8)) - 94) / 16)")
@@ -258,7 +325,21 @@ Line number. Valid range is 1 to 11.
 @param.MinX.Number
 Minimum X coordinate.
 @param.MaxX.Number
-Maximum X coordinate.
+Maximum X coordinate.
+
+@Language.zh-CN
+@Summary
+识别 [Player] 的鼠标在第 [Line] 行 X 坐标 [MinX] ~ [MaxX] 范围内的点击。
+@Group
+鼠标
+@param.Player.TrgPlayer
+目标玩家。
+@param.Line.Number
+行号。1 ~ 11 有效。
+@param.MinX.Number
+X 坐标最小范围。
+@param.MaxX.Number
+X 坐标最大范围。
 ]================================]
 function MouseClickLine(Player, Line, MinX, MaxX)
 	Player = ParsePlayer(Player)

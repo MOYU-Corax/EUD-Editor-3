@@ -16,6 +16,15 @@ Sets [Player]'s availability state for [Unit] to [State].
 Player
 @param.Player.TrgPlayer
 @param.Unit.TrgUnit
+@param.State.TrgSwitchState
+
+@Language.zh-CN
+@Summary
+将 [Player] 的 [Unit] 单位可用性设为 [State]。
+@Group
+玩家
+@param.Player.TrgPlayer
+@param.Unit.TrgUnit
 @param.State.TrgSwitchState
 ]================================]
 function SetPlayerUnitsAvailable(Player, Unit, State) --일반/TrgPlayer,TrgUnit,TrgSwitchState/[Player]의 [Unit] 유닛 사용 가능 값을 [State]합니다.
@@ -66,6 +75,14 @@ Returns [Player]'s availability value for [Unit].
 @Group
 Player
 @param.Player.TrgPlayer
+@param.Unit.TrgUnit
+
+@Language.zh-CN
+@Summary
+读取 [Player] 的 [Unit] 单位可用性值。
+@Group
+玩家
+@param.Player.TrgPlayer
 @param.Unit.TrgUnit
 ]================================]
 function GetPlayerUnitsAvailable(Player, Unit) --일반/TrgPlayer,TrgUnit/[Player]의 [Unit] 유닛 사용 가능 값을 읽어옵니다.
@@ -89,7 +106,13 @@ end
 @Summary
 Returns the offset of player unit availability data.
 @Group
-Player
+Player
+
+@Language.zh-CN
+@Summary
+获取玩家单位可用性地址。
+@Group
+玩家
 ]================================]
 function PlayerUnitsAvailableOffset() --일반//플레이어 유닛 사용 가능 오프셋을 가져옵니다.
 	return "0x57F27C"

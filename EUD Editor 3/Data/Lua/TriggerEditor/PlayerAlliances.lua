@@ -16,6 +16,15 @@ Sets [Player]'s alliance status toward [DestPlayer] to [AllyStatus].
 Alliance
 @param.Player.TrgPlayer
 @param.DestPlayer.TrgPlayer
+@param.AllyStatus.TrgAllyStatus
+
+@Language.zh-CN
+@Summary
+将 [Player] 所见的与 [DestPlayer] 的结盟关系设为 [AllyStatus]。
+@Group
+外交
+@param.Player.TrgPlayer
+@param.DestPlayer.TrgPlayer
 @param.AllyStatus.TrgAllyStatus
 ]================================]
 function SetPlayerAlliances(Player, DestPlayer, AllyStatus) --동맹/TrgPlayer,TrgPlayer,TrgAllyStatus/[Player]이 보는 [DestPlayer]와의 동맹 관계를 [AllyStatus]로 설정합니다.
@@ -63,6 +72,15 @@ Checks if [Player]'s alliance status toward [DestPlayer] is [AllyStatus].
 Alliance
 @param.Player.TrgPlayer
 @param.DestPlayer.TrgPlayer
+@param.AllyStatus.TrgAllyStatus
+
+@Language.zh-CN
+@Summary
+判断 [Player] 所见的与 [DestPlayer] 的结盟关系是否为 [AllyStatus]。
+@Group
+外交
+@param.Player.TrgPlayer
+@param.DestPlayer.TrgPlayer
 @param.AllyStatus.TrgAllyStatus
 ]================================]
 function CurrentPlayerAlliances(Player, DestPlayer, AllyStatus) --동맹/TrgPlayer,TrgPlayer,TrgAllyStatus/[Player]이 보는 [DestPlayer]와의 동맹 관계가 [AllyStatus]인지 확인합니다.
@@ -107,6 +125,14 @@ Returns [Player]'s alliance status toward [DestPlayer].
 @Group
 Alliance
 @param.Player.TrgPlayer
+@param.DestPlayer.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 所见的与 [DestPlayer] 的结盟关系。
+@Group
+外交
+@param.Player.TrgPlayer
 @param.DestPlayer.TrgPlayer
 ]================================]
 function GetPlayerAlliances(Player, DestPlayer) --동맹/TrgPlayer,TrgPlayer/[Player]이 보는 [DestPlayer]와의 동맹 관계를 반환합니다.
@@ -141,6 +167,13 @@ end
 Returns the EPD address of [Player]'s alliance data.
 @Group
 Alliance
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的结盟地址。
+@Group
+外交
 @param.Player.TrgPlayer
 ]================================]
 function PlayerAlliancesEPD(Player) --동맹/TrgPlayer/[Player]의 동맹 오프셋을 반환합니다.
@@ -167,6 +200,13 @@ end
 Returns the address of [Player]'s alliance data.
 @Group
 Alliance
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的结盟地址。
+@Group
+外交
 @param.Player.TrgPlayer
 ]================================]
 function PlayerAlliances(Player) --동맹/TrgPlayer/[Player]의 동맹 오프셋을 반환합니다.

@@ -14,6 +14,14 @@ Returns the offset of [Player]'s [Number]th selected unit.
 @Group
 General
 @param.Player.TrgPlayer
+@param.Number.Number
+
+@Language.zh-CN
+@Summary
+返回 [Player] 第 [Number] 个选择单位的地址。
+@Group
+一般
+@param.Player.TrgPlayer
 @param.Number.Number
 ]================================]
 function SeletionEPD(Player, Number) --일반/TrgPlayer,Number/[Player]의 [Number]번 선택유닛 오프셋을 반환합니다.

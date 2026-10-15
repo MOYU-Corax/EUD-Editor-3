@@ -1,4 +1,4 @@
-import SCAFlexible as scf;
+﻿import SCAFlexible as scf;
 import TriggerEditor.SCATool as sct;
 import TriggerEditor.SCAFastLoader as scfl;
 import TriggerEditor.SCAScript as scs;
@@ -20,6 +20,14 @@ var Min;
  * 5 = 금요일
  * 6 = 토요일
  * 7 = 일요일
+ * @Summary.zh-CN
+ * 1 = 星期一
+ * 2 = 星期二
+ * 3 = 星期三
+ * 4 = 星期四
+ * 5 = 星期五
+ * 6 = 星期六
+ * 7 = 星期日
 ***/
 var Week;
 const GlobalData = EUDArray(20);
@@ -55,6 +63,9 @@ function SetUseDefaultMessage(value){
  * @Summary.ko-KR
  * 0 = 연결끊킴
  * 1 = 연결됨
+ * @Summary.zh-CN
+ * 0 = 连接断开
+ * 1 = 已连接
 ***/
 function ConnectStatus(){
 	return sct.ConnectStatus[getcurpl()];
@@ -67,6 +78,12 @@ function ConnectStatus(){
  * 2 = 시간 불러오는 중
  * 3 = 맵 변수 불러오는 중
  * 4 = 저장중
+ * @Summary.zh-CN
+ * 0 = 待机
+ * 1 = 加载中
+ * 2 = 加载时间中
+ * 3 = 加载地图变量中
+ * 4 = 保存中
 ***/
 function CommandStatus(){
 	return sct.SCACommand[getcurpl()];
@@ -113,6 +130,19 @@ function CheckLoadable(){
  * 10 = 명령 실행
  * 11 = 시간 로드
  * 12 = 글로벌데이터 로드
+ * @Summary.zh-CN
+ * 1 = 已连接
+ * 2 = 连接断开
+ * 3 = 加载中
+ * 4 = 加载完成
+ * 5 = 保存中
+ * 6 = 保存完成
+ * 7 = 请先与启动器连接
+ * 8 = 正在执行其他操作。
+ * 9 = 操作失败
+ * 10 = 执行命令
+ * 11 = 加载时间
+ * 12 = 加载全局数据
 ***/
 function GetLastMessage(){
 	return sct.SCALastMessage[getcurpl()];
@@ -149,6 +179,9 @@ function LoadGlobalData(){
  * @Summary.ko-KR
  * 0 = 벤만 작동
  * 1 = 벤 이후 스타크래프트 강제종료
+ * @Summary.zh-CN
+ * 0 = 仅封禁
+ * 1 = 封禁后强制关闭星际争霸
 ***/
 function BanPlayer(BanType){
 	sct.BanPlayer(BanType);

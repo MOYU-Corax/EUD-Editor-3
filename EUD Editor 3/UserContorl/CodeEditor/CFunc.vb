@@ -95,6 +95,17 @@ Public Class FunctionToolTip
         Dim ReadStatus As ReadStatus
         Dim WriteParamIndex As Integer
         Dim FirstParam As Boolean = False
+        '当前语言块缺失时回退到 en-US
+        Dim EffLan As String = Lanstr
+        If EffLan <> "en-US" Then
+            EffLan = "en-US"
+            For Each l As String In Lines
+                If l.Replace("*", "").Trim = "@Summary." & Lanstr Then
+                    EffLan = Lanstr
+                    Exit For
+                End If
+            Next
+        End If
         '만약 @지령이 Summary라면
         For i = 0 To Lines.Count - 1
             Dim LineStr As String = Lines(i).Replace("*", "").Trim
@@ -108,14 +119,14 @@ Public Class FunctionToolTip
                 Case "@Type"
                     ReadStatus = ReadStatus.Type
                     Continue For
-                Case "@Summary." & Lanstr
+                Case "@Summary." & EffLan
                     ReadStatus = ReadStatus.Summary
                     Continue For
                 Case Else
                     If LineStr.IndexOf("@param") = 0 Then
                         Dim ParamSplitter() As String = LineStr.Split(".")
                         If ParamSplitter.Count = 3 Then
-                            If ParamSplitter.Last = Lanstr Then
+                            If ParamSplitter.Last = EffLan Then
                                 If FuncArgTooltip.IndexOf(ParamSplitter(1)) >= 0 Then
                                     WriteParamIndex = FuncArgTooltip.IndexOf(ParamSplitter(1))
                                     ReadStatus = ReadStatus.Param
@@ -130,7 +141,7 @@ Public Class FunctionToolTip
                     End If
                     If LineStr.IndexOf("@Summary.") = 0 Then
                         Dim ParamSplitter() As String = LineStr.Split(".")
-                        If ParamSplitter.Last <> Lanstr Then
+                        If ParamSplitter.Last <> EffLan Then
                             ReadStatus = ReadStatus.None
                             Continue For
                         End If

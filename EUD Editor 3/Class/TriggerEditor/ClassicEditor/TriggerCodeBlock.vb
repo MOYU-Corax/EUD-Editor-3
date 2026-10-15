@@ -202,7 +202,7 @@ Public Class TriggerCodeBlock
         Dim IsEmpty As Boolean = False
 
         If t Is Nothing Then
-            rstr = rstr & FName & vbCrLf & "존재하지 않거나 참조할 수 없는 함수입니다."
+            rstr = rstr & FName & vbCrLf & "函数不存在或无法引用。"
 
             '없는 함수
             '그냥 인자들만 출력시킨다.

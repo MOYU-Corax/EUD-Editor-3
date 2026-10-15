@@ -9,12 +9,12 @@ Public Class NotTextAndOver3ValidationRule
             Dim number As Long = value
 
             If number < 3 Then
-                Return New ValidationResult(False, "3보다 큰 숫자를 입력하세요.")
+                Return New ValidationResult(False, "请输入大于 3 的数字。")
             End If
 
             Return ValidationResult.ValidResult
         Catch ex As Exception
-            Return New ValidationResult(False, "숫자를 입력하세요")
+            Return New ValidationResult(False, "请输入数字")
             'Return New ValidationResult(False, value.ToString)
         End Try
 

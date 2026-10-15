@@ -18,6 +18,16 @@ Resource
 @param.Player.TrgPlayer
 @param.Modifier.TrgModifier
 @param.Amount.Number
+@param.ResourceType.TrgResource
+
+@Language.zh-CN
+@Summary
+将 [Player] 的 [ResourceType] 以 [Modifier] 方式调整 [Amount]。
+@Group
+资源
+@param.Player.TrgPlayer
+@param.Modifier.TrgModifier
+@param.Amount.Number
 @param.ResourceType.TrgResource
 ]================================]
 function SetResource(Player, Modifier, Amount, ResourceType) --일반/TrgPlayer,TrgModifier,Number,TrgResource/[Player]의 [ResourceType]을 [Amount]만큼 [Modifier]합니다.
@@ -43,6 +53,14 @@ end
 Returns [Player]'s [ResourceType] amount.
 @Group
 Resource
+@param.Player.TrgPlayer
+@param.ResourceType.TrgResource
+
+@Language.zh-CN
+@Summary
+读取 [Player] 的 [ResourceType]。
+@Group
+资源
 @param.Player.TrgPlayer
 @param.ResourceType.TrgResource
 ]================================]
@@ -70,6 +88,14 @@ end
 Returns the EPD address of [Player]'s [ResourceType].
 @Group
 Resource
+@param.Player.TrgPlayer
+@param.ResourceType.TrgResource
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Resource] 地址。
+@Group
+资源
 @param.Player.TrgPlayer
 @param.ResourceType.TrgResource
 ]================================]

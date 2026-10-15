@@ -18,7 +18,17 @@ Chat Detection
 @param.Player.TrgPlayer
 Target player.
 @param.Chat.TrgString
-Chat message to detect.
+Chat message to detect.
+
+@Language.zh-CN
+@Summary
+识别 [Player] 的聊天[Chat]。
+@Group
+聊天识别
+@param.Player.TrgPlayer
+目标玩家。
+@param.Chat.TrgString
+要识别的聊天。
 ]================================]
 function ChatEvent(Player ,Chat)
 	Player = ParsePlayer(Player)
@@ -58,7 +68,21 @@ Starting text (empty matches any).
 @param.Mid.TrgString
 Text to include in the middle.
 @param.End.TrgString
-Ending text (empty matches any).
+Ending text (empty matches any).
+
+@Language.zh-CN
+@Summary
+识别 [Player] 的聊天[Start]、[Mid]、[End]。
+@Group
+聊天识别
+@param.Player.TrgPlayer
+目标玩家。
+@param.Start.TrgString
+开头部分。留空则匹配任意内容。
+@param.Mid.TrgString
+中间包含的内容。
+@param.End.TrgString
+结尾部分。留空则匹配任意内容。
 ]================================]
 function ChatEventPattern(Player ,Start ,Mid ,End)
 	Player = ParsePlayer(Player)

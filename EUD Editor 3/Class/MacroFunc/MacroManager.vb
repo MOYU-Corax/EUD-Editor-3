@@ -48,30 +48,30 @@ Public Class MacroManager
 
 
         lua.RegisterFunction("preDefine", Me, Me.GetType().GetMethod("preDefine"))
-        FunctionList.Add(New LuaFunction("preDefine", "값을 미리 선언합니다.", "내부함수", "str", "str"))
+        FunctionList.Add(New LuaFunction("preDefine", "预声明值。", "内部函数", "str", "str"))
 
         lua.RegisterFunction("mainPreDefine", Me, Me.GetType().GetMethod("mainPreDefine"))
-        FunctionList.Add(New LuaFunction("mainPreDefine", "메인파일에 값을 미리 선언합니다.", "내부함수", "str", "str"))
+        FunctionList.Add(New LuaFunction("mainPreDefine", "在主文件中预声明值。", "内部函数", "str", "str"))
 
         lua.RegisterFunction("onPluginText", Me, Me.GetType().GetMethod("onPluginText"))
-        FunctionList.Add(New LuaFunction("onPluginText", "메인 함수의 onPluginExec에 내용을 추가합니다.", "내부함수", "str", "str"))
+        FunctionList.Add(New LuaFunction("onPluginText", "向主函数的 onPluginExec 添加内容。", "内部函数", "str", "str"))
 
         lua.RegisterFunction("beforeText", Me, Me.GetType().GetMethod("beforeText"))
-        FunctionList.Add(New LuaFunction("beforeText", "메인 함수의 beforeText에 내용을 추가합니다.", "내부함수", "str", "str"))
+        FunctionList.Add(New LuaFunction("beforeText", "向主函数的 beforeText 添加内容。", "内部函数", "str", "str"))
 
         lua.RegisterFunction("afterText", Me, Me.GetType().GetMethod("afterText"))
-        FunctionList.Add(New LuaFunction("afterText", "메인 함수의 afterText에 내용을 추가합니다.", "내부함수", "str", "str"))
+        FunctionList.Add(New LuaFunction("afterText", "向主函数的 afterText 添加内容。", "内部函数", "str", "str"))
 
         lua.RegisterFunction("echo", Me, Me.GetType().GetMethod("echo"))
-        FunctionList.Add(New LuaFunction("echo", "값을 반환합니다.", "내부함수", "str", "str"))
+        FunctionList.Add(New LuaFunction("echo", "返回值。", "内部函数", "str", "str"))
 
 
         lua.RegisterFunction("GetBGMIndex", Me, Me.GetType().GetMethod("GetBGMIndex"))
-        FunctionList.Add(New LuaFunction("GetBGMIndex", "사운드 인덱스를 반환합니다.", "내부함수", "bgmname", "BGM"))
+        FunctionList.Add(New LuaFunction("GetBGMIndex", "返回声音索引。", "内部函数", "bgmname", "BGM"))
 
 
         lua.RegisterFunction("GetReturnBGMIndex", Me, Me.GetType().GetMethod("GetReturnBGMIndex"))
-        FunctionList.Add(New LuaFunction("GetReturnBGMIndex", "사운드 인덱스를 반환합니다.", "내부함수", "bgmname", "BGM"))
+        FunctionList.Add(New LuaFunction("GetReturnBGMIndex", "返回声音索引。", "内部函数", "bgmname", "BGM"))
 
 
         lua.RegisterFunction("ParseUnit", Me, Me.GetType().GetMethod("ParseUnit"))
@@ -558,6 +558,8 @@ Public Class MacroManager
             Dim tooltips() As String = _tooltip.Split(vbCrLf)
 
             Dim CollectLan As Boolean = False
+            '当前语言块缺失时回退收集 en-US 块
+            Dim HasLan As Boolean = False
 
             Dim commandType As Integer = 0
             Dim tparam As String = ""
@@ -583,6 +585,9 @@ Public Class MacroManager
                             commandType = 0
                             Dim tLan As String = commands(1)
                             If tLan = cLan Then
+                                CollectLan = True
+                                HasLan = True
+                            ElseIf tLan = "en-US" AndAlso Not HasLan Then
                                 CollectLan = True
                             Else
                                 CollectLan = False

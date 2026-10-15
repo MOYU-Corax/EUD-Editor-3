@@ -18,6 +18,16 @@ Upgrade
 @param.Upgrade.Upgrade
 @param.Player.TrgPlayer
 @param.Modifier.TrgModifier
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+将 [Player] 的 [Upgrade] 当前值以 [Modifier] 方式调整 [Amount]。
+@Group
+升级
+@param.Upgrade.Upgrade
+@param.Player.TrgPlayer
+@param.Modifier.TrgModifier
 @param.Amount.Number
 ]================================]
 function SetUpgrade(Upgrade, Player, Modifier, Amount) --업그레이드/Upgrade,TrgPlayer,TrgModifier,Number/[Player]의 [Upgrade]의 현재값을 [Amount]만큼 [Modifier]합니다.
@@ -82,6 +92,16 @@ Upgrade
 @param.Upgrade.Upgrade
 @param.Player.TrgPlayer
 @param.Comparison.TrgComparison
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+判断 [Player] 的 [Upgrade] 当前值是否 [Comparison] [Amount]。
+@Group
+升级
+@param.Upgrade.Upgrade
+@param.Player.TrgPlayer
+@param.Comparison.TrgComparison
 @param.Amount.Number
 ]================================]
 function CurrentUpgrade(Upgrade, Player, Comparison, Amount) --업그레이드/Upgrade,TrgPlayer,TrgComparison,Number/[Player]의 [Upgrade]의 현재값이 [Comparison] [Amount]인지 확인합니다.
@@ -142,6 +162,14 @@ Returns the current level of [Upgrade] for [Player].
 @Group
 Upgrade
 @param.Upgrade.Upgrade
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Upgrade] 当前值。
+@Group
+升级
+@param.Upgrade.Upgrade
 @param.Player.TrgPlayer
 ]================================]
 function GetUpgrade(Upgrade, Player) --업그레이드/Upgrade,TrgPlayer/[Player]의 [Upgrade]의 현재값을 반환합니다.
@@ -173,6 +201,14 @@ end
 Returns the address of the current level of [Upgrade] for [Player].
 @Group
 Upgrade
+@param.Upgrade.Upgrade
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Upgrade] 当前值地址。
+@Group
+升级
 @param.Upgrade.Upgrade
 @param.Player.TrgPlayer
 ]================================]
@@ -217,6 +253,16 @@ end
 Modifies the maximum level of [Upgrade] for [Player]: [Modifier] [Amount].
 @Group
 Upgrade
+@param.Upgrade.Upgrade
+@param.Player.TrgPlayer
+@param.Modifier.TrgModifier
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+将 [Player] 的 [Upgrade] 最大值以 [Modifier] 方式调整 [Amount]。
+@Group
+升级
 @param.Upgrade.Upgrade
 @param.Player.TrgPlayer
 @param.Modifier.TrgModifier
@@ -284,6 +330,16 @@ Upgrade
 @param.Upgrade.Upgrade
 @param.Player.TrgPlayer
 @param.Comparison.TrgComparison
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+判断 [Player] 的 [Upgrade] 最大值是否 [Comparison] [Amount]。
+@Group
+升级
+@param.Upgrade.Upgrade
+@param.Player.TrgPlayer
+@param.Comparison.TrgComparison
 @param.Amount.Number
 ]================================]
 function CurrentUpgradeMax(Upgrade, Player, Comparison, Amount) --업그레이드/Upgrade,TrgPlayer,TrgComparison,Number/[Player]의 [Upgrade]의 최대값이 [Comparison] [Amount]인지 확인합니다.
@@ -344,6 +400,14 @@ Returns the maximum level of [Upgrade] for [Player].
 @Group
 Upgrade
 @param.Upgrade.Upgrade
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Upgrade] 最大值。
+@Group
+升级
+@param.Upgrade.Upgrade
 @param.Player.TrgPlayer
 ]================================]
 function GetUpgradeMax(Upgrade, Player) --업그레이드/Upgrade,TrgPlayer/[Player]의 [Upgrade]의 최대값을 반환합니다.
@@ -375,6 +439,14 @@ end
 Returns the address of the maximum level of [Upgrade] for [Player].
 @Group
 Upgrade
+@param.Upgrade.Upgrade
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Upgrade] 最大值地址。
+@Group
+升级
 @param.Upgrade.Upgrade
 @param.Player.TrgPlayer
 ]================================]

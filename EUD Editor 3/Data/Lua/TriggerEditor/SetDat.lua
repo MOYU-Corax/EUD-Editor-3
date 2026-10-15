@@ -18,6 +18,16 @@ DatFile
 @param.DatType.UnitsDat
 @param.Index.TrgUnit
 @param.Value.Number
+@param.Modifier.TrgModifier
+
+@Language.zh-CN
+@Summary
+将 [Index] 的 [DatType] 值以 [Modifier] 方式调整为 [Value]。
+@Group
+DatFile
+@param.DatType.UnitsDat
+@param.Index.TrgUnit
+@param.Value.Number
 @param.Modifier.TrgModifier
 ]================================]
 function SetUnitsDat(DatType, Index, Value, Modifier) --DatFile/UnitsDat,TrgUnit,Number,TrgModifier/[Index]의 [DatType]의 값을 [Value]로 [Modifier]합니다.
@@ -42,6 +52,16 @@ DatFile
 @Language.en-US
 @Summary
 Modifies the [DatType] value of [Index]: [Modifier] [Value].
+@Group
+DatFile
+@param.DatType.WeaponsDat
+@param.Index.Weapon
+@param.Value.Number
+@param.Modifier.TrgModifier
+
+@Language.zh-CN
+@Summary
+将 [Index] 的 [DatType] 值以 [Modifier] 方式调整为 [Value]。
 @Group
 DatFile
 @param.DatType.WeaponsDat
@@ -76,6 +96,16 @@ DatFile
 @param.DatType.FlingyDat
 @param.Index.Flingy
 @param.Value.Number
+@param.Modifier.TrgModifier
+
+@Language.zh-CN
+@Summary
+将 [Index] 的 [DatType] 值以 [Modifier] 方式调整为 [Value]。
+@Group
+DatFile
+@param.DatType.FlingyDat
+@param.Index.Flingy
+@param.Value.Number
 @param.Modifier.TrgModifier
 ]================================]
 function SetFlingyDat(DatType, Index, Value, Modifier) --DatFile/FlingyDat,Flingy,Number,TrgModifier/[Index]의 [DatType]의 값을 [Value]로 [Modifier]합니다.
@@ -100,6 +130,16 @@ DatFile
 @Language.en-US
 @Summary
 Modifies the [DatType] value of [Index]: [Modifier] [Value].
+@Group
+DatFile
+@param.DatType.SpritesDat
+@param.Index.Sprite
+@param.Value.Number
+@param.Modifier.TrgModifier
+
+@Language.zh-CN
+@Summary
+将 [Index] 的 [DatType] 值以 [Modifier] 方式调整为 [Value]。
 @Group
 DatFile
 @param.DatType.SpritesDat
@@ -134,6 +174,16 @@ DatFile
 @param.DatType.ImagesDat
 @param.Index.Image
 @param.Value.Number
+@param.Modifier.TrgModifier
+
+@Language.zh-CN
+@Summary
+将 [Index] 的 [DatType] 值以 [Modifier] 方式调整为 [Value]。
+@Group
+DatFile
+@param.DatType.ImagesDat
+@param.Index.Image
+@param.Value.Number
 @param.Modifier.TrgModifier
 ]================================]
 function SetImagesDat(DatType, Index, Value, Modifier) --DatFile/ImagesDat,Image,Number,TrgModifier/[Index]의 [DatType]의 값을 [Value]로 [Modifier]합니다.
@@ -158,6 +208,16 @@ DatFile
 @Language.en-US
 @Summary
 Modifies the [DatType] value of [Index]: [Modifier] [Value].
+@Group
+DatFile
+@param.DatType.UpgradesDat
+@param.Index.Upgrade
+@param.Value.Number
+@param.Modifier.TrgModifier
+
+@Language.zh-CN
+@Summary
+将 [Index] 的 [DatType] 值以 [Modifier] 方式调整为 [Value]。
 @Group
 DatFile
 @param.DatType.UpgradesDat
@@ -192,6 +252,16 @@ DatFile
 @param.DatType.TechdataDat
 @param.Index.Tech
 @param.Value.Number
+@param.Modifier.TrgModifier
+
+@Language.zh-CN
+@Summary
+将 [Index] 的 [DatType] 值以 [Modifier] 方式调整为 [Value]。
+@Group
+DatFile
+@param.DatType.TechdataDat
+@param.Index.Tech
+@param.Value.Number
 @param.Modifier.TrgModifier
 ]================================]
 function SetTechdataDat(DatType, Index, Value, Modifier) --DatFile/TechdataDat,Tech,Number,TrgModifier/[Index]의 [DatType]의 값을 [Value]로 [Modifier]합니다.
@@ -216,6 +286,16 @@ DatFile
 @Language.en-US
 @Summary
 Modifies the [DatType] value of [Index]: [Modifier] [Value].
+@Group
+DatFile
+@param.DatType.OrdersDat
+@param.Index.Order
+@param.Value.Number
+@param.Modifier.TrgModifier
+
+@Language.zh-CN
+@Summary
+将 [Index] 的 [DatType] 值以 [Modifier] 方式调整为 [Value]。
 @Group
 DatFile
 @param.DatType.OrdersDat

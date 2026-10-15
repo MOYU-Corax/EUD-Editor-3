@@ -1,10 +1,12 @@
-import BGMFlexible as bgm;
+﻿import BGMFlexible as bgm;
 
 /***
  * @Type
  * A
  * @Summary.ko-KR
  * 초기화 함수입니다. onPluginStart에서 한번 호출해야 합니다.
+ * @Summary.zh-CN
+ * 初始化函数。必须在 onPluginStart 中调用一次。
 ***/
 function loadSound(){
 	bgm.loadSound();
@@ -22,6 +24,8 @@ object Player{
 	 * A
 	 * @Summary.ko-KR
 	 * 처음 트랙으로 돌아갑니다.
+	 * @Summary.zh-CN
+	 * 回到第一音轨。
 	***/
 	function ResetTrack(){
 		if(IsUserCP()){
@@ -38,6 +42,10 @@ object Player{
 	 *
 	 * @param.bindex.ko-KR
 	 * 재생할 BGM의 인덱스입니다.
+	 * @Summary.zh-CN
+	 * 设置要播放的 BGM。
+	 * @param.bindex.zh-CN
+	 * 要播放的 BGM 索引。
 	***/
 	function SetBGM(bindex /*BGM*/){
 		if(IsUserCP()){
@@ -69,6 +77,10 @@ object Player{
 	 *
 	 * @param.bindex.ko-KR
 	 * 재생할 BGM의 인덱스입니다.
+	 * @Summary.zh-CN
+	 * 设置要播放的 BGM。
+	 * @param.bindex.zh-CN
+	 * 要播放的 BGM 索引。
 	***/
 	function constructor(bgmindex /*BGM*/){
 		this.bgmindex = bgmindex;
@@ -93,6 +105,8 @@ object Player{
 	 * A
 	 * @Summary.ko-KR
 	 * BGM을 재생합니다. 반복해서 호출해야 재생됩니다.
+	 * @Summary.zh-CN
+	 * 播放 BGM。需要反复调用才能持续播放。
 	***/
 	function Play(){
 		if(IsUserCP()){
@@ -140,6 +154,8 @@ var bgmindex;
  * A
  * @Summary.ko-KR
  * 처음 트랙으로 돌아갑니다.
+ * @Summary.zh-CN
+ * 回到第一音轨。
 ***/
 function ResetTrack(){
 	if(IsUserCP()){
@@ -156,6 +172,10 @@ function ResetTrack(){
  *
  * @param.bindex.ko-KR
  * 재생할 BGM의 인덱스입니다.
+ * @Summary.zh-CN
+ * 设置要播放的 BGM。
+ * @param.bindex.zh-CN
+ * 要播放的 BGM 索引。
 ***/
 function SetBGM(bindex /*BGM*/){
 	if(IsUserCP()){
@@ -182,6 +202,8 @@ function SetBGM(bindex /*BGM*/){
  * A
  * @Summary.ko-KR
  * BGM을 재생합니다. 반복해서 호출해야 재생됩니다.
+ * @Summary.zh-CN
+ * 播放 BGM。需要反复调用才能持续播放。
 ***/
 function Play(){
 	if(IsUserCP()){

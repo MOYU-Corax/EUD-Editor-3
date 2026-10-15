@@ -66,11 +66,11 @@ Public Class SCASetting
                 '        ImageLink.Text.Trim = "" Or
                 '        Mapdes.Text.Trim = "" Then
                 '        UseSCA.IsChecked = False
-                '        Warring.Content = "맵 정보를 모두 입력 하세요."
+                '        Warring.Content = "请完整填写地图信息。"
                 '    End If
                 'End If
                 UseSCA.IsChecked = False
-                Warring.Content = "맵 정보를 모두 입력 하세요."
+                Warring.Content = "请完整填写地图信息。"
             Else
                 Warring.Content = ""
             End If

@@ -428,6 +428,9 @@ Public Class TriggerFunction
         Dim IsGroup As Boolean = False
         Dim lan As String = ""
         Dim paramName As String = ""
+        '当前语言块缺失时回退收集 en-US 块
+        Dim CollectLan As Boolean = False
+        Dim HasLan As Boolean = False
         For i = 0 To tooltiplist.Count - 1
             Dim tstr As String = tooltiplist(i).Replace(vbCrLf, "").Replace(vbCr, "").Replace(vbLf, "")
             If i = 0 Then
@@ -464,6 +467,17 @@ Public Class TriggerFunction
                 Case "@Summary"
                     lan = tstrtype.Last
                     If lan <> pgData.Setting(ProgramData.TSetting.Language) Then
+                        If lan = "en-US" AndAlso Not HasLan Then
+                            CollectLan = True
+                            IsType = False
+                            IsSummary = True
+                            IsParam = False
+                            IsGroup = False
+                            rTrg.FSummary = ""
+                            Continue For
+                        End If
+
+                        CollectLan = False
                         IsType = False
                         IsSummary = False
                         IsParam = False
@@ -471,6 +485,8 @@ Public Class TriggerFunction
                         Continue For
                     End If
 
+                    HasLan = True
+                    CollectLan = True
                     IsType = False
                     IsSummary = True
                     IsParam = False
@@ -480,12 +496,30 @@ Public Class TriggerFunction
                 Case "@param"
                     lan = tstrtype.Last
                     If lan <> pgData.Setting(ProgramData.TSetting.Language) Then
+                        If lan = "en-US" AndAlso Not HasLan Then
+                            CollectLan = True
+                            IsType = False
+                            IsSummary = False
+                            IsParam = True
+                            IsGroup = False
+                            paramName = tstrtype(1)
+                            Dim targfb As Arg = rTrg.GetArg(paramName)
+                            If targfb IsNot Nothing Then
+                                rTrg.GetArg(paramName).ASummary = ""
+                            End If
+                            Continue For
+                        End If
+
+                        CollectLan = False
                         IsType = False
                         IsSummary = False
                         IsParam = False
                         IsGroup = False
                         Continue For
                     End If
+
+                    HasLan = True
+                    CollectLan = True
                     IsType = False
                     IsSummary = False
                     IsParam = True
@@ -520,7 +554,7 @@ Public Class TriggerFunction
                         rTrg.FGroup = tstr
                     End If
 
-                    If lan = pgData.Setting(ProgramData.TSetting.Language) Then
+                    If CollectLan Then
                         If IsSummary Then
                             rTrg.FSummary = rTrg.FSummary & tstr
                         ElseIf IsParam Then

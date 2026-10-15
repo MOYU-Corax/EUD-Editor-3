@@ -14,6 +14,14 @@ Modifies screen brightness: [Modifier] [Amount].
 @Group
 System
 @param.Modifier.TrgModifier
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+将画面亮度以 [Modifier] 方式调整 [Amount]。
+@Group
+系统
+@param.Modifier.TrgModifier
 @param.Amount.Number
 ]================================]
 function SetLight(Modifier, Amount) --일반/TrgModifier,Number/화면 밝기를 [Amount]만큼 [Modifier]합니다.
@@ -34,7 +42,13 @@ end
 @Summary
 Returns the current screen brightness value.
 @Group
-System
+System
+
+@Language.zh-CN
+@Summary
+读取画面亮度的值。
+@Group
+系统
 ]================================]
 function GetLight() --일반//화면 밝기의 값을 읽습니다.
     Offset = LightOffset()
@@ -53,7 +67,13 @@ end
 @Summary
 Returns the address of the screen brightness value.
 @Group
-System
+System
+
+@Language.zh-CN
+@Summary
+返回画面亮度的地址。
+@Group
+系统
 ]================================]
 function LightOffset() --일반//화면 밝기의 주소를 반환합니다.
 	return "0x657A9C"

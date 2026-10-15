@@ -18,6 +18,16 @@ Score
 @param.Score.EUDScore
 @param.Player.TrgPlayer
 @param.Modifier.TrgModifier
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+将 [Player] 的 [Score] 以 [Modifier] 方式调整 [Amount]。
+@Group
+得分
+@param.Score.EUDScore
+@param.Player.TrgPlayer
+@param.Modifier.TrgModifier
 @param.Amount.Number
 ]================================]
 function SetScore(Score, Player, Modifier, Amount) --일반/EUDScore,TrgPlayer,TrgModifier,Number/[Player]의 [Score]를 [Amount]만큼 [Modifier]합니다.
@@ -50,6 +60,16 @@ Score
 @param.Score.EUDScore
 @param.Player.TrgPlayer
 @param.Comparison.TrgComparison
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+判断 [Player] 的 [Score] 是否 [Comparison] [Amount]。
+@Group
+得分
+@param.Score.EUDScore
+@param.Player.TrgPlayer
+@param.Comparison.TrgComparison
 @param.Amount.Number
 ]================================]
 function CurrentScore(Score, Player, Comparison, Amount) --일반/EUDScore,TrgPlayer,TrgComparison,Number/[Player]의 [Score]가 [Comparison] [Amount]인지 확인합니다.
@@ -78,6 +98,14 @@ Returns [Player]'s [Score] value.
 @Group
 Score
 @param.Score.EUDScore
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+读取 [Player] 的 [Score] 值。
+@Group
+得分
+@param.Score.EUDScore
 @param.Player.TrgPlayer
 ]================================]
 function GetScore(Score, Player) --일반/EUDScore,TrgPlayer/[Player]의 [Score] 값을 읽습니다.
@@ -102,6 +130,14 @@ end
 Returns the EPD address of [Player]'s [Score].
 @Group
 Score
+@param.Score.EUDScore
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Score] 地址。
+@Group
+得分
 @param.Score.EUDScore
 @param.Player.TrgPlayer
 ]================================]

@@ -10,7 +10,13 @@ EUDTurbo를 사용합니다.
 @Summary
 Enables EUDTurbo.
 @Group
-General
+General
+
+@Language.zh-CN
+@Summary
+使用 EUDTurbo。
+@Group
+一般
 ]================================]
 function EUDTurbo()
 	echo("dwwrite(0x6509A0, 0)")

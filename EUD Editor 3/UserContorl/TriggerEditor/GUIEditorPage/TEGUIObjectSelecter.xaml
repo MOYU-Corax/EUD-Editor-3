@@ -20,7 +20,7 @@
                         <ColumnDefinition Width="20"/>
                     </Grid.ColumnDefinitions>
                     <Label Margin="8">
-                        함수테스트
+                        函数测试
                     </Label>
                     <Border Grid.Column="1" Background="#FFCF2AFF"/>
                 </Grid>
@@ -28,7 +28,7 @@
             <ListBoxItem Tag="1" Padding="0">
                 <DockPanel>
                     <Label Margin="8">
-                        함수
+                        函数
                     </Label>
                     <Border DockPanel.Dock="Right" Background="#FFCF2AFF"/>
                 </DockPanel>
@@ -37,10 +37,10 @@
 
 
             <!--<ListBoxItem Content="제어" Background="#FFFFC500" Tag="0"/>
-            <ListBoxItem Content="함수" Background="#FFCF2AFF" Tag="1"/>
-            <ListBoxItem Content="조건" Background="#FF45EC5B" Tag="2"/>
-            <ListBoxItem Content="액션" Background="#FF2CC0EC" Tag="3"/>
-            <ListBoxItem Content="변수" Background="#FFFF6850" Tag="4"/>-->
+            <ListBoxItem Content="函数" Background="#FFCF2AFF" Tag="1"/>
+            <ListBoxItem Content="条件" Background="#FF45EC5B" Tag="2"/>
+            <ListBoxItem Content="动作" Background="#FF2CC0EC" Tag="3"/>
+            <ListBoxItem Content="变量" Background="#FFFF6850" Tag="4"/>-->
         </ListBox>
 
 

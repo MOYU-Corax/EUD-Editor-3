@@ -26,7 +26,21 @@ Adjustment method.
 @param.Amount.Number
 Value to apply.
 @param.Unit.TrgUnit
-Unit to adjust.
+Unit to adjust.
+
+@Language.zh-CN
+@Summary
+将 [Player] 击杀 [Unit] 的数量以 [Modifier] 方式调整 [Amount]。
+@Group
+一般
+@param.Player.TrgPlayer
+目标玩家。
+@param.Modifier.TrgModifier
+调整方式。
+@param.Amount.Number
+要设置的值。
+@param.Unit.TrgUnit
+要设置的单位。
 ]================================]
 function SetKills(Player, Modifier, Amount, Unit) --일반/TrgPlayer,TrgModifier,Number,TrgUnit/[Player]의 [Unit]이 죽은 수를 [Amount]만큼 [Modifier]합니다.
 	Player = ParsePlayer(Player)
@@ -58,7 +72,17 @@ General
 @param.Unit.TrgUnit
 Unit to read.
 @param.Player.TrgPlayer
-Target player.
+Target player.
+
+@Language.zh-CN
+@Summary
+读取 [Player] 击杀 [Unit] 的数量。
+@Group
+一般
+@param.Unit.TrgUnit
+要设置的单位。
+@param.Player.TrgPlayer
+目标玩家。
 ]================================]
 function GetKills(Unit, Player) --일반/TrgUnit,TrgPlayer/[Player]의 [Unit]이 죽은 수를 읽습니다.
 	Player = ParsePlayer(Player)
@@ -88,7 +112,17 @@ General
 @param.Unit.TrgUnit
 Unit to read.
 @param.Player.TrgPlayer
-Target player.
+Target player.
+
+@Language.zh-CN
+@Summary
+返回 [Player] 击杀 [Unit] 数量的地址。
+@Group
+一般
+@param.Unit.TrgUnit
+要设置的单位。
+@param.Player.TrgPlayer
+目标玩家。
 ]================================]
 function KillsEPD(Unit, Player) --일반/TrgUnit,TrgPlayer/[Player]의 [Unit]이 죽은 수의 주소를 반환합니다.
 	Player = ParsePlayer(Player)

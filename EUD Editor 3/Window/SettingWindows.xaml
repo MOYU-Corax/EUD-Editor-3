@@ -148,6 +148,7 @@
                     VerticalAlignment="Bottom" >
                         <ComboBoxItem Content="한국어" Tag="ko-KR"/>
                         <ComboBoxItem Content="English" Tag="en-US"/>
+                        <ComboBoxItem Content="简体中文" Tag="zh-CN"/>
                     </ComboBox>
                     <Separator Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Background="#4CA0A0A0"/>
 

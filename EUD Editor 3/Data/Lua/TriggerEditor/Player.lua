@@ -16,6 +16,15 @@ Changes [Player]'s name to [ID][Args].
 Player
 @param.Player.TrgPlayer
 @param.ID.FormatString
+@param.Args.Arguments
+
+@Language.zh-CN
+@Summary
+将 [Player] 的 ID 改为 [ID][Args]。
+@Group
+玩家
+@param.Player.TrgPlayer
+@param.ID.FormatString
 @param.Args.Arguments
 ]================================]
 function SetPlayerID(Player, ID, Args) --플레이어/TrgPlayer,FormatString,Arguments/[Player]의 아이디를 [ID][Args]로 변경합니다.
@@ -44,6 +53,14 @@ end
 Checks if [Player]'s name is [ID].
 @Group
 Player
+@param.Player.TrgPlayer
+@param.ID.TrgString
+
+@Language.zh-CN
+@Summary
+判断 [Player] 的 ID 是否为 [ID]。
+@Group
+玩家
 @param.Player.TrgPlayer
 @param.ID.TrgString
 ]================================]

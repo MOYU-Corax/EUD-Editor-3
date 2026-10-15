@@ -13,6 +13,13 @@ waittime = 0
 Waits for [Time] frames.
 @Group
 Wait
+@param.Time.Number
+
+@Language.zh-CN
+@Summary
+等待 [Time] 帧。
+@Group
+等待
 @param.Time.Number
 ]================================]
 function Wait(Time) --대기하기/Number/프레임 [Time]만큼 기다립니다.
@@ -32,7 +39,13 @@ end
 @Summary
 Starts the wait section.
 @Group
-Wait
+Wait
+
+@Language.zh-CN
+@Summary
+等待部分的起始。
+@Group
+等待
 ]================================]
 function WaitStart() --대기하기//대기하기의 시작 부분입니다.
 	waittime = 0
@@ -51,7 +64,13 @@ end
 @Summary
 Starts the wait condition block.
 @Group
-Wait
+Wait
+
+@Language.zh-CN
+@Summary
+等待条件部分的起始。
+@Group
+等待
 ]================================]
 function WaitConditionStart() --대기하기//대기하기 조건 부의 시작 부분입니다.
 	echo("if (WaitTimer == 0 &&")
@@ -69,7 +88,13 @@ end
 @Summary
 Ends the wait condition block.
 @Group
-Wait
+Wait
+
+@Language.zh-CN
+@Summary
+等待条件部分的结束。
+@Group
+等待
 ]================================]
 function WaitConditionEnd() --대기하기//대기하기 조건 부의 끝 부분입니다.
 	echo("){WaitTimer = 1;}")
@@ -87,7 +112,13 @@ end
 @Summary
 Starts the wait action block.
 @Group
-Wait
+Wait
+
+@Language.zh-CN
+@Summary
+等待动作部分的起始。
+@Group
+等待
 ]================================]
 function WaitActionStart() --대기하기//대기하기 액션 부의 시작 부분입니다.
 	echo("if(WaitTimer > 0){if (WaitTimer == 1){")
@@ -105,7 +136,13 @@ end
 @Summary
 Ends the wait action block.
 @Group
-Wait
+Wait
+
+@Language.zh-CN
+@Summary
+等待动作部分的结束。
+@Group
+等待
 ]================================]
 function WaitActionEnd() --대기하기//대기하기 액션 부의 끝 부분입니다.
 	echo("}WaitTimer += 1;")
@@ -123,7 +160,13 @@ end
 @Summary
 Ends the wait section.
 @Group
-Wait
+Wait
+
+@Language.zh-CN
+@Summary
+等待部分的结束。
+@Group
+等待
 ]================================]
 function WaitEnd() --대기하기//대기하기의 끝 부분입니다.
 	echo("if (WaitTimer > " .. waittime .. "){WaitTimer = 0;}}}")

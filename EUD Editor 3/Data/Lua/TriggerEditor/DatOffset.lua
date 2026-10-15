@@ -14,7 +14,15 @@ Returns the address of [DatType].
 @Group
 DatFile
 @param.DatType.UnitsDat
-Parameter.
+Parameter.
+
+@Language.zh-CN
+@Summary
+返回 [DatType] 的地址。
+@Group
+DatFile
+@param.DatType.UnitsDat
+参数。
 ]================================]
 function UnitsDatOffset(DatType)
     str = DatOffset("units", DatType)
@@ -37,7 +45,15 @@ Returns the address of [DatType].
 @Group
 DatFile
 @param.DatType.WeaponsDat
-Parameter.
+Parameter.
+
+@Language.zh-CN
+@Summary
+返回 [DatType] 的地址。
+@Group
+DatFile
+@param.DatType.WeaponsDat
+参数。
 ]================================]
 function WeaponsDatOffset(DatType)
     str = DatOffset("weapons", DatType)
@@ -60,7 +76,15 @@ Returns the address of [DatType].
 @Group
 DatFile
 @param.DatType.FlingyDat
-Parameter.
+Parameter.
+
+@Language.zh-CN
+@Summary
+返回 [DatType] 的地址。
+@Group
+DatFile
+@param.DatType.FlingyDat
+参数。
 ]================================]
 function FlingyDatOffset(DatType)
     str = DatOffset("flingy", DatType)
@@ -83,7 +107,15 @@ Returns the address of [DatType].
 @Group
 DatFile
 @param.DatType.SpritesDat
-Parameter.
+Parameter.
+
+@Language.zh-CN
+@Summary
+返回 [DatType] 的地址。
+@Group
+DatFile
+@param.DatType.SpritesDat
+参数。
 ]================================]
 function SpritesDatOffset(DatType)
     str = DatOffset("sprites", DatType)
@@ -106,7 +138,15 @@ Returns the address of [DatType].
 @Group
 DatFile
 @param.DatType.ImagesDat
-Parameter.
+Parameter.
+
+@Language.zh-CN
+@Summary
+返回 [DatType] 的地址。
+@Group
+DatFile
+@param.DatType.ImagesDat
+参数。
 ]================================]
 function ImagesDatOffset(DatType)
     str = DatOffset("images", DatType)
@@ -129,7 +169,15 @@ Returns the address of [DatType].
 @Group
 DatFile
 @param.DatType.UpgradesDat
-Parameter.
+Parameter.
+
+@Language.zh-CN
+@Summary
+返回 [DatType] 的地址。
+@Group
+DatFile
+@param.DatType.UpgradesDat
+参数。
 ]================================]
 function UpgradesDatOffset(DatType)
     str = DatOffset("upgrades", DatType)
@@ -152,7 +200,15 @@ Returns the address of [DatType].
 @Group
 DatFile
 @param.DatType.TechdataDat
-Parameter.
+Parameter.
+
+@Language.zh-CN
+@Summary
+返回 [DatType] 的地址。
+@Group
+DatFile
+@param.DatType.TechdataDat
+参数。
 ]================================]
 function TechdataDatOffset(DatType)
     str = DatOffset("techdata", DatType)
@@ -175,7 +231,15 @@ Returns the address of [DatType].
 @Group
 DatFile
 @param.DatType.OrdersDat
-Parameter.
+Parameter.
+
+@Language.zh-CN
+@Summary
+返回 [DatType] 的地址。
+@Group
+DatFile
+@param.DatType.OrdersDat
+参数。
 ]================================]
 function OrdersDatOffset(DatType)
     str = DatOffset("orders", DatType)

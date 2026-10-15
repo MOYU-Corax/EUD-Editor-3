@@ -26,7 +26,21 @@ Target player.
 @param.Modifier.TrgModifier
 Modifier operation.
 @param.Amount.Number
-Amount to apply.
+Amount to apply.
+
+@Language.zh-CN
+@Summary
+将 [Player] 的 [Unit] 已完成单位持有数以 [Modifier] 方式调整 [Amount]。
+@Group
+单位持有数
+@param.Unit.TrgUnit
+目标单位。需要该单位的科技将被解锁。
+@param.Player.TrgPlayer
+目标玩家。
+@param.Modifier.TrgModifier
+运算方式。
+@param.Amount.Number
+要设置的值。
 ]================================]
 function SetCompletedUnitCount(Unit, Player, Modifier, Amount)
 	Player = ParsePlayer(Player)
@@ -58,7 +72,17 @@ Unit Count
 @param.Unit.TrgUnit
 Target unit. Required tech for this unit will be unlocked.
 @param.Player.TrgPlayer
-Target player.
+Target player.
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Unit] 已完成单位持有数。
+@Group
+单位持有数
+@param.Unit.TrgUnit
+目标单位。需要该单位的科技将被解锁。
+@param.Player.TrgPlayer
+目标玩家。
 ]================================]
 function GetCompletedUnitCount(Unit, Player)
 	Player = ParsePlayer(Player)
@@ -83,6 +107,14 @@ end
 Returns the EPD address of [Player]'s completed count for [Unit].
 @Group
 Unit Count
+@param.Unit.TrgUnit
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Unit] 已完成单位持有数的地址。
+@Group
+单位持有数
 @param.Unit.TrgUnit
 @param.Player.TrgPlayer
 ]================================]

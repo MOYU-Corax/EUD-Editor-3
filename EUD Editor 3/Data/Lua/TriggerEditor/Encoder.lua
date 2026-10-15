@@ -545,7 +545,13 @@ end
 @Language.en-US
 @Summary
 @Group
-Internal Function
+Internal Function
+
+@Language.zh-CN
+@Summary
+
+@Group
+内部函数
 ]================================]
 function EncodeAllyStatus(s)
     return EncodeConst(AllyStatusDict, s)
@@ -561,7 +567,13 @@ end
 @Language.en-US
 @Summary
 @Group
-Internal Function
+Internal Function
+
+@Language.zh-CN
+@Summary
+
+@Group
+内部函数
 ]================================]
 function EncodeComparison(s)
     return EncodeConst(ComparisonDict, s)
@@ -577,7 +589,13 @@ end
 @Language.en-US
 @Summary
 @Group
-Internal Function
+Internal Function
+
+@Language.zh-CN
+@Summary
+
+@Group
+内部函数
 ]================================]
 function EncodeModifier(s)
     return EncodeConst(ModifierDict, s)
@@ -593,7 +611,13 @@ end
 @Language.en-US
 @Summary
 @Group
-Internal Function
+Internal Function
+
+@Language.zh-CN
+@Summary
+
+@Group
+内部函数
 ]================================]
 function EncodeOrder(s)
     return EncodeConst(OrderDict, s)
@@ -610,7 +634,13 @@ LuaPlayerVariable = "getcurpl()"
 @Language.en-US
 @Summary
 @Group
-Internal Function
+Internal Function
+
+@Language.zh-CN
+@Summary
+
+@Group
+内部函数
 ]================================]
 function EncodePlayer(s)
     if s == CurrentPlayer then
@@ -630,7 +660,13 @@ end
 @Language.en-US
 @Summary
 @Group
-Internal Function
+Internal Function
+
+@Language.zh-CN
+@Summary
+
+@Group
+内部函数
 ]================================]
 function EncodePropState(s)
     return EncodeConst(PropStateDict, s)
@@ -646,7 +682,13 @@ end
 @Language.en-US
 @Summary
 @Group
-Internal Function
+Internal Function
+
+@Language.zh-CN
+@Summary
+
+@Group
+内部函数
 ]================================]
 function EncodeResource(s)
     return EncodeConst(ResourceDict, s)
@@ -662,7 +704,13 @@ end
 @Language.en-US
 @Summary
 @Group
-Internal Function
+Internal Function
+
+@Language.zh-CN
+@Summary
+
+@Group
+内部函数
 ]================================]
 function EncodeScore(s)
     return EncodeConst(ScoreDict, s)
@@ -678,7 +726,13 @@ end
 @Language.en-US
 @Summary
 @Group
-Internal Function
+Internal Function
+
+@Language.zh-CN
+@Summary
+
+@Group
+内部函数
 ]================================]
 function EncodeSwitchAction(s)
     return EncodeConst(SwitchActionDict, s)
@@ -694,7 +748,13 @@ end
 @Language.en-US
 @Summary
 @Group
-Internal Function
+Internal Function
+
+@Language.zh-CN
+@Summary
+
+@Group
+内部函数
 ]================================]
 function EncodeSwitchState(s)
     return EncodeConst(SwitchStateDict, s)
@@ -710,7 +770,13 @@ end
 @Language.en-US
 @Summary
 @Group
-Internal Function
+Internal Function
+
+@Language.zh-CN
+@Summary
+
+@Group
+内部函数
 ]================================]
 function EncodeAIScript(s)
     return EncodeConst(AIScriptDict, s)
@@ -726,7 +792,13 @@ end
 @Language.en-US
 @Summary
 @Group
-Internal Function
+Internal Function
+
+@Language.zh-CN
+@Summary
+
+@Group
+内部函数
 ]================================]
 function EncodeCount(s)
     if s == All then

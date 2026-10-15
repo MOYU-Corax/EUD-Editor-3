@@ -8,7 +8,7 @@
 
         '변수가 객체인지 아닌지 판단.
         If True Then
-            Dim n As String() = {"대입", "덧셈", "곱셈", "뺄셈", "나눗셈"}
+            Dim n As String() = {"赋值", "加法", "乘法", "减法", "除法"}
             Dim t As String() = {"SetTo", "Add", "Mul", "Sub", "나눗셈"}
             For i = 0 To n.Count - 1
                 Dim cbitem As New ComboBoxItem()

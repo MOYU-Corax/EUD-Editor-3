@@ -16,6 +16,15 @@ Prints [Text][Args] using [Buffer].
 Text Output
 @param.Buffer.TrgString
 @param.Text.FormatString
+@param.Args.Arguments
+
+@Language.zh-CN
+@Summary
+使用缓冲区 [Buffer] 输出 [Text][Args]。
+@Group
+文本输出
+@param.Buffer.TrgString
+@param.Text.FormatString
 @param.Args.Arguments
 ]================================]
 function Printf(Buffer, Text, Args) --텍스트출력/TrgString,FormatString,Arguments/[Text][Args]을 버퍼 [Buffer]를 사용해 출력합니다.
@@ -47,6 +56,16 @@ end
 Prints [Text][Args] to [Line] using [Buffer].
 @Group
 Text Output
+@param.Buffer.TrgString
+@param.Line.Number
+@param.Text.FormatString
+@param.Args.Arguments
+
+@Language.zh-CN
+@Summary
+使用缓冲区 [Buffer] 在第 [Line] 行输出 [Text][Args]。
+@Group
+文本输出
 @param.Buffer.TrgString
 @param.Line.Number
 @param.Text.FormatString
@@ -84,6 +103,16 @@ Text Output
 @param.TblID.Tbl
 @param.Offset.Number
 @param.Text.FormatString
+@param.Args.Arguments
+
+@Language.zh-CN
+@Summary
+将 [Text][Args] 写入 [TblID] 的 [Offset] 位置。
+@Group
+文本输出
+@param.TblID.Tbl
+@param.Offset.Number
+@param.Text.FormatString
 @param.Args.Arguments
 ]================================]
 function SetTbl(TblID, Offset, Text, Args) --Tbl/Tbl,Number,FormatString,Arguments/[TblID]의 [Offset]위치에 [Text][Args]를 씁니다.
@@ -115,6 +144,16 @@ Text Output
 @param.TblID.Tbl
 @param.Offset.Number
 @param.Text.FormatString
+@param.Args.Arguments
+
+@Language.zh-CN
+@Summary
+将 [TblID] 的 [Offset] 位置替换为 [Text][Args]。
+@Group
+文本输出
+@param.TblID.Tbl
+@param.Offset.Number
+@param.Text.FormatString
 @param.Args.Arguments
 ]================================]
 function ChangeTbl(TblID, Offset, Text, Args) --Tbl/Tbl,Number,FormatString,Arguments/[TblID]의 [Offset]위치를 [Text][Args]로 교체합니다.
@@ -141,6 +180,14 @@ end
 Prints [Text][Args] to the error line.
 @Group
 Text Output
+@param.Text.FormatString
+@param.Args.Arguments
+
+@Language.zh-CN
+@Summary
+将 [Text][Args] 输出到错误行。
+@Group
+文本输出
 @param.Text.FormatString
 @param.Args.Arguments
 ]================================]

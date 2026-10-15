@@ -26,7 +26,21 @@ Object to compare.
 @param.Value.Number
 Value.
 @param.Comparison.TrgComparison
-Comparison method.
+Comparison method.
+
+@Language.zh-CN
+@Summary
+判断 [Index] 的 [DatType] 值是否 [Comparison] [Value]。
+@Group
+DatFile
+@param.DatType.UnitsDat
+要比较的参数。
+@param.Index.TrgUnit
+要比较的对象。
+@param.Value.Number
+值。
+@param.Comparison.TrgComparison
+比较方式。
 ]================================]
 function UnitsDat(DatType, Index, Value, Comparison) --DatFile/UnitsDat,TrgUnit,Number,TrgComparison/[Index]의 [DatType]의 값이 [Comparison] [Value]인지 판단합니다.
 	Unit = ParseUnit(Index)
@@ -63,7 +77,21 @@ Object to compare.
 @param.Value.Number
 Value.
 @param.Comparison.TrgComparison
-Comparison method.
+Comparison method.
+
+@Language.zh-CN
+@Summary
+判断 [Index] 的 [DatType] 值是否 [Comparison] [Value]。
+@Group
+DatFile
+@param.DatType.WeaponsDat
+要比较的参数。
+@param.Index.Weapon
+要比较的对象。
+@param.Value.Number
+值。
+@param.Comparison.TrgComparison
+比较方式。
 ]================================]
 function WeaponsDat(DatType, Index, Value, Comparison) --DatFile/WeaponsDat,Weapon,Number,TrgComparison/[Index]의 [DatType]의 값이 [Comparison] [Value]인지 판단합니다.
 	Weapon = ParseWeapon(Index)
@@ -101,6 +129,20 @@ Object to compare.
 Value.
 @param.Comparison.TrgComparison
 Comparison method.
+
+@Language.zh-CN
+@Summary
+判断 [Index] 的 [DatType] 值是否 [Comparison] [Value]。
+@Group
+DatFile
+@param.DatType.FlingyDat
+要比较的参数。
+@param.Index.Flingy
+要比较的对象。
+@param.Value.Number
+值。
+@param.Comparison.TrgComparison
+比较方式。
 ]================================]
 function FlingyDat(DatType, Index, Value, Comparison) --DatFile/FlingyDat,Flingy,Number,TrgComparison/[Index]의 [DatType]의 값이 [Comparison] [Value]인지 판단합니다.
 	Flingy = ParseFlingy(Index)
@@ -137,7 +179,21 @@ Object to compare.
 @param.Value.Number
 Value.
 @param.Comparison.TrgComparison
-Comparison method.
+Comparison method.
+
+@Language.zh-CN
+@Summary
+判断 [Index] 的 [DatType] 值是否 [Comparison] [Value]。
+@Group
+DatFile
+@param.DatType.SpritesDat
+要比较的参数。
+@param.Index.Sprite
+要比较的对象。
+@param.Value.Number
+值。
+@param.Comparison.TrgComparison
+比较方式。
 ]================================]
 function SpritesDat(DatType, Index, Value, Comparison) --DatFile/SpritesDat,Sprite,Number,TrgComparison/[Index]의 [DatType]의 값이 [Comparison] [Value]인지 판단합니다.
 	Sprite = ParseSprites(Index)
@@ -174,7 +230,21 @@ Object to compare.
 @param.Value.Number
 Value.
 @param.Comparison.TrgComparison
-Comparison method.
+Comparison method.
+
+@Language.zh-CN
+@Summary
+判断 [Index] 的 [DatType] 值是否 [Comparison] [Value]。
+@Group
+DatFile
+@param.DatType.ImagesDat
+要比较的参数。
+@param.Index.Image
+要比较的对象。
+@param.Value.Number
+值。
+@param.Comparison.TrgComparison
+比较方式。
 ]================================]
 function ImagesDat(DatType, Index, Value, Comparison) --DatFile/ImagesDat,Image,Number,TrgComparison/[Index]의 [DatType]의 값이 [Comparison] [Value]인지 판단합니다.
 	Image = ParseImages(Index)
@@ -211,7 +281,21 @@ Object to compare.
 @param.Value.Number
 Value.
 @param.Comparison.TrgComparison
-Comparison method.
+Comparison method.
+
+@Language.zh-CN
+@Summary
+判断 [Index] 的 [DatType] 值是否 [Comparison] [Value]。
+@Group
+DatFile
+@param.DatType.UpgradesDat
+要比较的参数。
+@param.Index.Upgrade
+要比较的对象。
+@param.Value.Number
+值。
+@param.Comparison.TrgComparison
+比较方式。
 ]================================]
 function UpgradesDat(DatType, Index, Value, Comparison) --DatFile/UpgradesDat,Upgrade,Number,TrgComparison/[Index]의 [DatType]의 값이 [Comparison] [Value]인지 판단합니다.
 	Upgrade = ParseUpgrades(Index)
@@ -248,7 +332,21 @@ Object to compare.
 @param.Value.Number
 Value.
 @param.Comparison.TrgComparison
-Comparison method.
+Comparison method.
+
+@Language.zh-CN
+@Summary
+判断 [Index] 的 [DatType] 值是否 [Comparison] [Value]。
+@Group
+DatFile
+@param.DatType.TechdataDat
+要比较的参数。
+@param.Index.Tech
+要比较的对象。
+@param.Value.Number
+值。
+@param.Comparison.TrgComparison
+比较方式。
 ]================================]
 function TechdataDat(DatType, Index, Value, Comparison) --DatFile/TechdataDat,Tech,Number,TrgComparison/[Index]의 [DatType]의 값이 [Comparison] [Value]인지 판단합니다.
 	Tech = ParseTechData(Index)
@@ -285,7 +383,21 @@ Object to compare.
 @param.Value.Number
 Value.
 @param.Comparison.TrgComparison
-Comparison method.
+Comparison method.
+
+@Language.zh-CN
+@Summary
+判断 [Index] 的 [DatType] 值是否 [Comparison] [Value]。
+@Group
+DatFile
+@param.DatType.OrdersDat
+要比较的参数。
+@param.Index.Order
+要比较的对象。
+@param.Value.Number
+值。
+@param.Comparison.TrgComparison
+比较方式。
 ]================================]
 function OrdersDat(DatType, Index, Value, Comparison) --DatFile/OrdersDat,Order,Number,TrgComparison/[Index]의 [DatType]의 값이 [Comparison] [Value]인지 판단합니다.
 	Order = ParseOrder(Index)

@@ -16,6 +16,15 @@ Modifies [Variable]: [Modifier] [Value].
 Variable
 @param.Variable.Variable
 @param.Modifier.TrgModifier
+@param.Value.Number
+
+@Language.zh-CN
+@Summary
+将 [Variable] 以 [Modifier] 方式调整为 [Value]。
+@Group
+变量
+@param.Variable.Variable
+@param.Modifier.TrgModifier
 @param.Value.Number
 ]================================]
 function SetVariable(Variable, Modifier, Value) --변수/Variable,TrgModifier,Number/[Variable]을 [Value]으로 [Modifier]합니다.
@@ -59,6 +68,15 @@ end
 Checks if [Variable] is [Comparison] [Value].
 @Group
 Variable
+@param.Variable.Variable
+@param.Comparison.TrgComparison
+@param.Value.Number
+
+@Language.zh-CN
+@Summary
+判断 [Variable] 是否 [Comparison][Value]。
+@Group
+变量
 @param.Variable.Variable
 @param.Comparison.TrgComparison
 @param.Value.Number

@@ -15,7 +15,15 @@ Checks if the buttonset ID of the locally selected unit is [Comparison] [Amount]
 Selection Detection
 @param.Comparison.TrgComparison
 @param.Amount.Number
+
 
+@Language.zh-CN
+@Summary
+判断该玩家选择单位的按钮集 ID 是否 [Comparison] [Amount]。
+@Group
+选择识别
+@param.Comparison.TrgComparison
+@param.Amount.Number
 ]================================]
 function LocalSelectID(Comparison, Amount)
     Comparison = ParseComparison(Comparison)
@@ -39,6 +47,14 @@ end
 Checks if the pointer of the locally selected unit is [Comparison] [Amount].
 @Group
 Selection Detection
+@param.Comparison.TrgComparison
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+判断 [Player] 的选择单位指针是否 [Comparison] [Amount]。
+@Group
+选择识别
 @param.Comparison.TrgComparison
 @param.Amount.Number
 ]================================]
@@ -64,6 +80,14 @@ end
 Checks if [Player] has selected unit at pointer [ptr].
 @Group
 Selection Detection
+@param.Player.TrgPlayer
+@param.ptr.Number
+
+@Language.zh-CN
+@Summary
+检查 [Player] 是否选择了 [ptr]。
+@Group
+选择识别
 @param.Player.TrgPlayer
 @param.ptr.Number
 ]================================]

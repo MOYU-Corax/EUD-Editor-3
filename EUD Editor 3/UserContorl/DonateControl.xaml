@@ -10,7 +10,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel Margin="10">
         <StackPanel Orientation="Horizontal">
-            <Button Background="#FFF96853" Foreground="#DDFFFFFF" Click="Button_Click" ToolTip="정기적으로 후원을 할 수 있는 플랫폼입니다. 언제든지 취소가 가능합니다.">
+            <Button Background="#FFF96853" Foreground="#DDFFFFFF" Click="Button_Click" ToolTip="这是可以定期捐赠的平台，随时可以取消。">
                 <WrapPanel Cursor="Hand">
                     <materialDesign:PackIcon Kind="Patreon" VerticalAlignment="Center" HorizontalAlignment="Center" />
                     <TextBlock Text=" BECOME A PATREON"/>

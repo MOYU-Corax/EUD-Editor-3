@@ -229,7 +229,7 @@ Namespace Tool
             Try
                 TEEpsDefaultFunc.LoadFunc(sr.ReadToEnd)
             Catch ex As Exception
-                CustomMsgBox("함수 초기화 실패", MessageBoxButton.OK, MessageBoxImage.Error)
+                CustomMsgBox("函数初始化失败", MessageBoxButton.OK, MessageBoxImage.Error)
             End Try
             sr.Close()
             fs.Close()

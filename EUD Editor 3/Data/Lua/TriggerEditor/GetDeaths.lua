@@ -18,7 +18,17 @@ General
 @param.Unit.TrgUnit
 Unit to get death count for.
 @param.Player.TrgPlayer
-Target player.
+Target player.
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Unit] 死亡计数值。
+@Group
+一般
+@param.Unit.TrgUnit
+要获取死亡计数的单位。
+@param.Player.TrgPlayer
+目标玩家。
 ]================================]
 function GetDeaths(Unit, Player) -- 일반/TrgUnit,TrgPlayer/[Player]의 [Unit] 데스값을 반환합니다.
     Unit = ParseUnit(Unit)

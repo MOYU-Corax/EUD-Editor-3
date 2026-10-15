@@ -13,7 +13,7 @@ Public Class dump
 
         Set(ByVal value As String)
             If Not (value = customerNameValue) Then
-                MsgBox("뭐야 " & value)
+                MsgBox("未知值: " & value)
                 customerNameValue = value
                 NotifyPropertyChanged("CustomerName")
             End If

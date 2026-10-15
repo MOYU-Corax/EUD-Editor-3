@@ -12,6 +12,13 @@ BGM
 Sets the player's BGM to [BGMName].
 @Group
 BGM
+@param.BGMName.BGM
+
+@Language.zh-CN
+@Summary
+将该玩家的 BGM 设置为 [BGMName]。
+@Group
+BGM
 @param.BGMName.BGM
 ]================================]
 function SetBGM(BGMName)
@@ -38,6 +45,12 @@ BGM
 @Summary
 Plays the player's BGM.
 @Group
+BGM
+
+@Language.zh-CN
+@Summary
+播放该玩家的 BGM。
+@Group
 BGM
 ]================================]
 function BGMStart()
@@ -57,6 +70,12 @@ BGM
 @Language.en-US
 @Summary
 Stops the player's BGM.
+@Group
+BGM
+
+@Language.zh-CN
+@Summary
+停止该玩家的 BGM。
 @Group
 BGM
 ]================================]
@@ -78,6 +97,12 @@ BGM
 @Summary
 Resumes the player's BGM.
 @Group
+BGM
+
+@Language.zh-CN
+@Summary
+恢复播放该玩家的 BGM。
+@Group
 BGM
 ]================================]
 function BGMResume()
@@ -97,6 +122,12 @@ BGM
 @Language.en-US
 @Summary
 Pauses the player's BGM.
+@Group
+BGM
+
+@Language.zh-CN
+@Summary
+暂停该玩家的 BGM。
 @Group
 BGM
 ]================================]

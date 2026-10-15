@@ -18,6 +18,16 @@ Supply
 @param.SupplyType.SupplyType
 @param.Player.TrgPlayer
 @param.Modifier.TrgModifier
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+将 [Player] 的 [SupplyType] 以 [Modifier] 方式调整 [Amount]。
+@Group
+人口
+@param.SupplyType.SupplyType
+@param.Player.TrgPlayer
+@param.Modifier.TrgModifier
 @param.Amount.Number
 ]================================]
 function SetSupply(SupplyType, Player, Modifier, Amount) --인구수/SupplyType,TrgPlayer,TrgModifier,Number/[Player]의 [SupplyType]를 [Amount]만큼 [Modifier]합니다.
@@ -50,6 +60,16 @@ Supply
 @param.SupplyType.SupplyType
 @param.Player.TrgPlayer
 @param.Comparison.TrgComparison
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+判断 [Player] 的 [SupplyType] 是否 [Comparison] [Amount]。
+@Group
+人口
+@param.SupplyType.SupplyType
+@param.Player.TrgPlayer
+@param.Comparison.TrgComparison
 @param.Amount.Number
 ]================================]
 function CurrentSupply(SupplyType, Player, Comparison, Amount) --인구수/SupplyType,TrgPlayer,TrgComparison,Number/[Player]의 [SupplyType]가 [Comparison] [Amount]인지 확인합니다.
@@ -78,6 +98,14 @@ Returns [Player]'s [SupplyType] value.
 @Group
 Supply
 @param.SupplyType.SupplyType
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+读取 [Player] 的 [SupplyType] 值。
+@Group
+人口
+@param.SupplyType.SupplyType
 @param.Player.TrgPlayer
 ]================================]
 function GetSupply(SupplyType, Player) --인구수/SupplyType,TrgPlayer/[Player]의 [SupplyType] 값을 읽습니다.
@@ -102,6 +130,14 @@ end
 Returns the EPD address of [Player]'s [SupplyType].
 @Group
 Supply
+@param.SupplyType.SupplyType
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [SupplyType] 地址。
+@Group
+人口
 @param.SupplyType.SupplyType
 @param.Player.TrgPlayer
 ]================================]

@@ -393,7 +393,7 @@ Public Class ProjectData
             If _MapData IsNot Nothing Then
                 Return _MapData
             Else
-                Tool.ErrorMsgBox("시스템에러 맵데이터가 없음")
+                Tool.ErrorMsgBox("系统错误：缺少地图数据")
                 Return Nothing
             End If
 

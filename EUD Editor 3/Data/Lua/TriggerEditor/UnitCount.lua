@@ -18,6 +18,16 @@ Unit Count
 @param.Unit.TrgUnit
 @param.Player.TrgPlayer
 @param.Modifier.TrgModifier
+@param.Amount.Number
+
+@Language.zh-CN
+@Summary
+将 [Player] 的 [Unit] 单位持有数以 [Modifier] 方式调整 [Amount]。
+@Group
+单位持有数
+@param.Unit.TrgUnit
+@param.Player.TrgPlayer
+@param.Modifier.TrgModifier
 @param.Amount.Number
 ]================================]
 function SetUnitCount(Unit, Player, Modifier, Amount) --일반/TrgUnit,TrgPlayer,TrgModifier,Number/[Player]의 [Unit]의 유닛보유수를 [Amount]만큼 [Modifier]합니다.
@@ -46,6 +56,14 @@ Returns [Player]'s count of [Unit].
 @Group
 Unit Count
 @param.Unit.TrgUnit
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Unit] 单位持有数。
+@Group
+单位持有数
+@param.Unit.TrgUnit
 @param.Player.TrgPlayer
 ]================================]
 function GetUnitCount(Unit, Player) --일반/TrgUnit,TrgPlayer/[Player]의 [Unit]의 유닛보유수를 반환합니다.
@@ -71,6 +89,14 @@ end
 Returns the EPD address of [Player]'s count for [Unit].
 @Group
 Unit Count
+@param.Unit.TrgUnit
+@param.Player.TrgPlayer
+
+@Language.zh-CN
+@Summary
+返回 [Player] 的 [Unit] 单位持有数的地址。
+@Group
+单位持有数
 @param.Unit.TrgUnit
 @param.Player.TrgPlayer
 ]================================]

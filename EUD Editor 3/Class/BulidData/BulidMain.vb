@@ -43,7 +43,7 @@ Partial Public Class BuildData
 
             If CheckBuildable() Then
                 If Not SoundConverter() Then
-                    Tool.ErrorMsgBox("Sound파일 변환 에러")
+                    Tool.ErrorMsgBox("Sound 文件转换错误")
                     pgData.IsCompilng = False
                     pgData.isEddCompile = False
                     Tool.RefreshMainWindow()
@@ -53,7 +53,7 @@ Partial Public Class BuildData
 
 
                 If Not SoundSCAScriptConverter() Then
-                    Tool.ErrorMsgBox("SCAScriptSound파일 변환 에러")
+                    Tool.ErrorMsgBox("SCAScriptSound 文件转换错误")
                     pgData.IsCompilng = False
                     pgData.isEddCompile = False
                     Tool.RefreshMainWindow()
@@ -75,7 +75,7 @@ Partial Public Class BuildData
 
                             '로그인 실패하면
                             If Not SCALoginWindow.Result Then
-                                Tool.ErrorMsgBox(Tool.GetText("Error SCA") & vbCrLf & "계정 정보가 올바르지 않습니다. SCA사용이 해제됩니다.")
+                                Tool.ErrorMsgBox(Tool.GetText("Error SCA") & vbCrLf & "账号信息不正确。将停用 SCA。")
                                 pgData.IsCompilng = False
                                 pgData.isEddCompile = False
                                 Tool.RefreshMainWindow()
@@ -91,7 +91,7 @@ Partial Public Class BuildData
 
                         '로그인 실패하면
                         If Not SCALoginWindow.Result Then
-                            Tool.ErrorMsgBox(Tool.GetText("Error SCA") & vbCrLf & "계정 정보가 올바르지 않습니다. SCA사용이 해제됩니다.")
+                            Tool.ErrorMsgBox(Tool.GetText("Error SCA") & vbCrLf & "账号信息不正确。将停用 SCA。")
                             pgData.IsCompilng = False
                             pgData.isEddCompile = False
                             Tool.RefreshMainWindow()

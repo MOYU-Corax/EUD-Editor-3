@@ -10,7 +10,13 @@
 @Summary
 Returns the PTR of the next unit to be created.
 @Group
-CUnit Offset
+CUnit Offset
+
+@Language.zh-CN
+@Summary
+返回下一个生成的单位的地址。
+@Group
+结构偏移
 ]================================]
 function ReadNextUnitPtr()
     echo("cunitread_epd(EPD(0x628438))")
@@ -28,7 +34,13 @@ end
 @Summary
 Returns the EPD of the next unit to be created.
 @Group
-CUnit Offset
+CUnit Offset
+
+@Language.zh-CN
+@Summary
+返回下一个生成的单位的 EPD。
+@Group
+结构偏移
 ]================================]
 function ReadNextUnitEpd()
     echo("cunitepdread_epd(EPD(0x628438))[[1]]")
@@ -46,7 +58,13 @@ end
 @Summary
 Returns the PTR and EPD of the next unit to be created.
 @Group
-CUnit Offset
+CUnit Offset
+
+@Language.zh-CN
+@Summary
+以 ptr 和 epd 形式返回下一个生成的单位。
+@Group
+结构偏移
 ]================================]
 function ReadNextUnitPtrEpd()
     echo("cunitepdread_epd(EPD(0x628438))")
@@ -68,7 +86,15 @@ Stores the PTR of the next unit to be created into [ptr].
 @Group
 CUnit Offset
 @param.ptr.Variable
-Variable where the ptr will be stored.
+Variable where the ptr will be stored.
+
+@Language.zh-CN
+@Summary
+将下一个生成的单位的地址存入 [ptr]。
+@Group
+结构偏移
+@param.ptr.Variable
+存储地址的变量。
 ]================================]
 function SetNextUnitPtr(ptr)
     echo(ptr .. " = cunitread_epd(EPD(0x628438))")
@@ -90,7 +116,15 @@ Stores the EPD of the next unit to be created into [epd].
 @Group
 CUnit Offset
 @param.epd.Variable
-Variable where the epd will be stored.
+Variable where the epd will be stored.
+
+@Language.zh-CN
+@Summary
+将下一个生成的单位的 EPD 存入 [epd]。
+@Group
+结构偏移
+@param.epd.Variable
+存储 EPD 的变量。
 ]================================]
 function SetNextUnitEpd(epd)
     echo(epd .. " = cunitepdread_epd(EPD(0x628438))[[1]]")
@@ -116,7 +150,17 @@ CUnit Offset
 @param.ptr.Variable
 Variable where the ptr will be stored.
 @param.epd.Variable
-Variable where the epd will be stored.
+Variable where the epd will be stored.
+
+@Language.zh-CN
+@Summary
+将下一个生成的单位的 PTR 存入 [ptr]，EPD 存入 [epd]。
+@Group
+结构偏移
+@param.ptr.Variable
+存储 PTR 的变量。
+@param.epd.Variable
+存储 EPD 的变量。
 ]================================]
 function SetNextUnitPtrEpd(ptr, epd)
     echo(ptr .. ", " .. epd .. " = cunitepdread_epd(EPD(0x628438))")
@@ -139,7 +183,15 @@ Returns address and size of the given Offset.
 @Group
 CUnit Offset
 @param.Offset.CUnitOffset
-Name of the CUnit field.
+Name of the CUnit field.
+
+@Language.zh-CN
+@Summary
+返回 Offset 的地址和大小。
+@Group
+结构偏移
+@param.Offset.CUnitOffset
+CUnit 地址的名称。
 ]================================]
 function GetCUnitOffset(Offset)
 	t = {
@@ -377,7 +429,17 @@ CUnit Offset
 @param.ptr.Variable
 Target unit.
 @param.Offset.CUnitOffset
-Field to read.
+Field to read.
+
+@Language.zh-CN
+@Summary
+读取 [ptr] 的 [Offset]。
+@Group
+结构偏移
+@param.ptr.Variable
+目标单位。
+@param.Offset.CUnitOffset
+要读取的项目。
 ]================================]
 function GetCUnitptr(ptr, Offset)
 	table = GetCUnitOffset(Offset)
@@ -417,7 +479,17 @@ CUnit Offset
 @param.epd.Variable
 Target unit.
 @param.Offset.CUnitOffset
-Field to read.
+Field to read.
+
+@Language.zh-CN
+@Summary
+读取 [epd] 的 [Offset]。
+@Group
+结构偏移
+@param.epd.Variable
+目标单位。
+@param.Offset.CUnitOffset
+要读取的项目。
 ]================================]
 function GetCUnitepd(epd, Offset)
 	table = GetCUnitOffset(Offset)
@@ -466,7 +538,21 @@ Field to modify.
 @param.Value.Number
 Value.
 @param.Modifier.TrgModifier
-Operation method.
+Operation method.
+
+@Language.zh-CN
+@Summary
+将 [ptr] 的 [Offset] 以 [Modifier] 方式调整 [Value]。
+@Group
+结构偏移
+@param.ptr.Variable
+目标单位。
+@param.Offset.CUnitOffset
+要修改的项目。
+@param.Value.Number
+值。
+@param.Modifier.TrgModifier
+运算方式。
 ]================================]
 function SetCUnitptr(ptr, Offset, Value, Modifier)
 	Modifier = ParseModifier(Modifier)
@@ -522,7 +608,21 @@ Field to modify.
 @param.Value.Number
 Value.
 @param.Modifier.TrgModifier
-Operation method.
+Operation method.
+
+@Language.zh-CN
+@Summary
+将 [epd] 的 [Offset] 以 [Modifier] 方式调整 [Value]。
+@Group
+结构偏移
+@param.epd.Variable
+目标单位。
+@param.Offset.CUnitOffset
+要修改的项目。
+@param.Value.Number
+值。
+@param.Modifier.TrgModifier
+运算方式。
 ]================================]
 function SetCUnitepd(epd, Offset, Value, Modifier) --구조오프셋/Variable,CUnitOffset,Number,TrgModifier/[epd]의 [Offset]을 [Value]만큼 [Modifier]합니다.
 	Modifier = ParseModifier(Modifier)
@@ -578,7 +678,21 @@ Field to check.
 @param.Value.Number
 Value.
 @param.Comparison.TrgComparison
-Operation method.
+Operation method.
+
+@Language.zh-CN
+@Summary
+判断 [ptr] 的 [Offset] 是否 [Comparison] [Value]。
+@Group
+结构偏移
+@param.ptr.Variable
+目标单位。
+@param.Offset.CUnitOffset
+要检查的项目。
+@param.Value.Number
+值。
+@param.Comparison.TrgComparison
+比较方式。
 ]================================]
 function CUnitptr(ptr, Offset, Value, Comparison)
 	Comparison = ParseComparison(Comparison)
@@ -634,7 +748,21 @@ Field to check.
 @param.Value.Number
 Value.
 @param.Comparison.TrgComparison
-Operation method.
+Operation method.
+
+@Language.zh-CN
+@Summary
+判断 [epd] 的 [Offset] 是否 [Comparison] [Value]。
+@Group
+结构偏移
+@param.epd.Variable
+目标单位。
+@param.Offset.CUnitOffset
+要检查的项目。
+@param.Value.Number
+值。
+@param.Comparison.TrgComparison
+比较方式。
 ]================================]
 function CUnitepd(epd, Offset, Value, Comparison)
 	Comparison = ParseComparison(Comparison)

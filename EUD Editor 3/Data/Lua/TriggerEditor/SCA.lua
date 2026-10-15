@@ -17,7 +17,17 @@ SCA
 @param.ScriptName.SCAScript
 Name of the script to execute.
 @param.ReturnIndex.Number
-Index to return the result to.
+Index to return the result to.
+
+@Language.zh-CN
+@Summary
+执行 [ScriptName] 并将结果返回到 [ReturnIndex]。
+@Group
+SCA
+@param.ScriptName.SCAScript
+要执行的脚本名称。
+@param.ReturnIndex.Number
+返回值的索引。
 ]================================]
 function SCAScriptRunFunc(ScriptName, ReturnIndex, ...)
 	preDefine("import TriggerEditor.SCALuaWrapper as scalua;")
@@ -59,7 +69,19 @@ Variable name.
 @param.Value.Number
 Value to apply.
 @param.Modifier.TrgModifier
-Operation type.
+Operation type.
+
+@Language.zh-CN
+@Summary
+对 Script 变量 [Variable] 以 [Modifier] 方式调整 [Value]。
+@Group
+SCA
+@param.Variable.TrgString
+变量名。
+@param.Value.Number
+要写入的值。
+@param.Modifier.TrgModifier
+运算类型。
 ]================================]
 function SCAScriptWriteVariable(Variable, Modifier, Value)
 	preDefine("import TriggerEditor.SCALuaWrapper as scalua;")
@@ -87,7 +109,15 @@ Reads Script variable [Variable].
 @Group
 SCA
 @param.Variable.TrgString
-Variable name.
+Variable name.
+
+@Language.zh-CN
+@Summary
+读取 Script 变量 [Variable]。
+@Group
+SCA
+@param.Variable.TrgString
+变量名。
 ]================================]
 function SCAScriptReadVariable(Variable)
 	preDefine("import TriggerEditor.SCALuaWrapper as scalua;")
@@ -111,7 +141,15 @@ Returns the offset of Script variable [Variable].
 @Group
 SCA
 @param.Variable.TrgString
-Variable name.
+Variable name.
+
+@Language.zh-CN
+@Summary
+Script 变量 [Variable] 的地址。
+@Group
+SCA
+@param.Variable.TrgString
+变量名。
 ]================================]
 function SCAScriptVariableOffset(Variable)
 	preDefine("import TriggerEditor.SCALuaWrapper as scalua;")
@@ -132,6 +170,13 @@ SCA
 @Language.en-US
 @Summary
 Loads data from slot [Slot].
+@Group
+SCA
+@param.Slot.Number
+
+@Language.zh-CN
+@Summary
+加载 [Slot] 槽位的数据。
 @Group
 SCA
 @param.Slot.Number
@@ -161,6 +206,13 @@ SCA
 Saves data to slot [Slot].
 @Group
 SCA
+@param.Slot.Number
+
+@Language.zh-CN
+@Summary
+保存 [Slot] 槽位的数据。
+@Group
+SCA
 @param.Slot.Number
 ]================================]
 function SCASave(Slot) --SCA/Number/[Slot] 슬롯의 데이터를 저장합니다.
@@ -186,6 +238,13 @@ SCA
 @Language.en-US
 @Summary
 Bans the current player from the UMS map with [BanType].
+@Group
+SCA
+@param.BanType.SCABanType
+
+@Language.zh-CN
+@Summary
+以 [BanType] 方式将该玩家从使用地图中屏蔽。
 @Group
 SCA
 @param.BanType.SCABanType
@@ -216,6 +275,12 @@ SCA
 @Summary
 Loads time information.
 @Group
+SCA
+
+@Language.zh-CN
+@Summary
+加载时间信息。
+@Group
 SCA
 ]================================]
 function SCALoadTime() --SCA//시간 정보를 불러옵니다.
@@ -240,6 +305,12 @@ SCA
 @Language.en-US
 @Summary
 Loads global variables.
+@Group
+SCA
+
+@Language.zh-CN
+@Summary
+加载全局变量。
 @Group
 SCA
 ]================================]
@@ -266,6 +337,12 @@ SCA
 @Summary
 Loads time information once.
 @Group
+SCA
+
+@Language.zh-CN
+@Summary
+加载时间信息（仅一次）。
+@Group
 SCA
 ]================================]
 function SCALoadTimeOnce() --SCA//시간 정보를 불러옵니다.
@@ -290,6 +367,12 @@ SCA
 @Language.en-US
 @Summary
 Loads global variables once.
+@Group
+SCA
+
+@Language.zh-CN
+@Summary
+加载全局变量（仅一次）。
 @Group
 SCA
 ]================================]
@@ -316,6 +399,12 @@ SCA
 @Summary
 Checks if loading is complete.
 @Group
+SCA
+
+@Language.zh-CN
+@Summary
+检查是否加载完成。
+@Group
 SCA
 ]================================]
 function IsLoadComplete() --SCA//불러오기 완료를 확인합니다.
@@ -337,6 +426,12 @@ SCA
 @Language.en-US
 @Summary
 Checks if saving is complete.
+@Group
+SCA
+
+@Language.zh-CN
+@Summary
+检查是否保存完成。
 @Group
 SCA
 ]================================]
@@ -360,6 +455,12 @@ SCA
 @Summary
 Checks if global variable loading is complete.
 @Group
+SCA
+
+@Language.zh-CN
+@Summary
+检查全局变量是否加载完成。
+@Group
 SCA
 ]================================]
 function IsGlobalLoadComplete() --SCA//글로벌 변수의 불러오기 완료를 확인합니다.
@@ -381,6 +482,12 @@ SCA
 @Language.en-US
 @Summary
 Checks if time information loading is complete.
+@Group
+SCA
+
+@Language.zh-CN
+@Summary
+检查时间信息是否加载完成。
 @Group
 SCA
 ]================================]
@@ -404,6 +511,13 @@ SCA
 @Language.en-US
 @Summary
 Returns the value of global data at index [Index].
+@Group
+SCA
+@param.Index.Number
+
+@Language.zh-CN
+@Summary
+返回第 [Index] 个全局数据的值。
 @Group
 SCA
 @param.Index.Number
@@ -432,6 +546,15 @@ SCA
 @Language.en-US
 @Summary
 Checks if global data at [Index] is [Comparison] [Value].
+@Group
+SCA
+@param.Index.Number
+@param.Comparison.TrgComparison
+@param.Value.Number
+
+@Language.zh-CN
+@Summary
+判断第 [Index] 个全局数据的值是否 [Comparison] [Value]。
 @Group
 SCA
 @param.Index.Number
@@ -480,6 +603,13 @@ SCA
 Returns [DateType].
 @Group
 SCA
+@param.DateType.DateType
+
+@Language.zh-CN
+@Summary
+返回 [DateType]。
+@Group
+SCA
 @param.DateType.DateType
 ]================================]
 function SCAGetTime(DateType) --SCA/DateType/[DateType]을 반환합니다.
@@ -522,6 +652,15 @@ SCA
 @Language.en-US
 @Summary
 Checks if [DateType] is [Comparison] [Value].
+@Group
+SCA
+@param.DateType.DateType
+@param.Comparison.TrgComparison
+@param.Value.Number
+
+@Language.zh-CN
+@Summary
+判断 [DateType] 是否 [Comparison] [Value]。
 @Group
 SCA
 @param.DateType.DateType
@@ -578,6 +717,13 @@ SCA
 @Language.en-US
 @Summary
 Checks if the current day is [Weekend].
+@Group
+SCA
+@param.Weekend.Weekend
+
+@Language.zh-CN
+@Summary
+判断当前星期是否为 [Weekend]。
 @Group
 SCA
 @param.Weekend.Weekend

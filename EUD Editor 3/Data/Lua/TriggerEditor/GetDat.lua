@@ -18,7 +18,17 @@ DatFile
 @param.DatType.UnitsDat
 Parameter.
 @param.Index.TrgUnit
-Target unit.
+Target unit.
+
+@Language.zh-CN
+@Summary
+返回 [Index] 的 [DatType] 值。
+@Group
+DatFile
+@param.DatType.UnitsDat
+参数。
+@param.Index.TrgUnit
+目标单位。
 ]================================]
 function GetUnitsDat(DatType, Index) --DatFile/UnitsDat,TrgUnit/[Index]의 [DatType] 값을 반환합니다.
 	Unit = ParseUnit(Index)
@@ -46,7 +56,17 @@ DatFile
 @param.DatType.WeaponsDat
 Parameter.
 @param.Index.Weapon
-Target weapon.
+Target weapon.
+
+@Language.zh-CN
+@Summary
+返回 [Index] 的 [DatType] 值。
+@Group
+DatFile
+@param.DatType.WeaponsDat
+参数。
+@param.Index.Weapon
+目标武器。
 ]================================]
 function GetWeaponsDat(DatType, Index) --DatFile/WeaponsDat,Weapon/[Index]의 [DatType] 값을 반환합니다.
 	Weapon = ParseWeapon(Index)
@@ -74,7 +94,17 @@ DatFile
 @param.DatType.FlingyDat
 Parameter.
 @param.Index.Flingy
-Target flingy.
+Target flingy.
+
+@Language.zh-CN
+@Summary
+返回 [Index] 的 [DatType] 值。
+@Group
+DatFile
+@param.DatType.FlingyDat
+参数。
+@param.Index.Flingy
+目标飞行数据。
 ]================================]
 function GetFlingyDat(DatType, Index) --DatFile/FlingyDat,Flingy/[Index]의 [DatType] 값을 반환합니다.
 	Flingy = ParseFlingy(Index)
@@ -102,7 +132,17 @@ DatFile
 @param.DatType.SpritesDat
 Parameter.
 @param.Index.Sprite
-Target sprite.
+Target sprite.
+
+@Language.zh-CN
+@Summary
+返回 [Index] 的 [DatType] 值。
+@Group
+DatFile
+@param.DatType.SpritesDat
+参数。
+@param.Index.Sprite
+目标精灵。
 ]================================]
 function GetSpritesDat(DatType, Index) --DatFile/SpritesDat,Sprite/[Index]의 [DatType] 값을 반환합니다.
 	Sprite = ParseSprites(Index)
@@ -131,7 +171,17 @@ DatFile
 @param.DatType.ImagesDat
 Parameter.
 @param.Index.Image
-Target image.
+Target image.
+
+@Language.zh-CN
+@Summary
+返回 [Index] 的 [DatType] 值。
+@Group
+DatFile
+@param.DatType.ImagesDat
+参数。
+@param.Index.Image
+目标图像。
 ]================================]
 function GetImagesDat(DatType, Index) --DatFile/ImagesDat,Image/[Index]의 [DatType] 값을 반환합니다.
 	Image = ParseImages(Index)
@@ -159,7 +209,17 @@ DatFile
 @param.DatType.UpgradesDat
 Parameter.
 @param.Index.Upgrade
-Target upgrade.
+Target upgrade.
+
+@Language.zh-CN
+@Summary
+返回 [Index] 的 [DatType] 值。
+@Group
+DatFile
+@param.DatType.UpgradesDat
+参数。
+@param.Index.Upgrade
+目标升级。
 ]================================]
 function GetUpgradesDat(DatType, Index) --DatFile/UpgradesDat,Upgrade/[Index]의 [DatType] 값을 반환합니다.
 	Upgrade = ParseUpgrade(Index)
@@ -187,7 +247,17 @@ DatFile
 @param.DatType.TechdataDat
 Parameter.
 @param.Index.Tech
-Target tech.
+Target tech.
+
+@Language.zh-CN
+@Summary
+返回 [Index] 的 [DatType] 值。
+@Group
+DatFile
+@param.DatType.TechdataDat
+参数。
+@param.Index.Tech
+目标科技。
 ]================================]
 function GetTechdataDat(DatType, Index) --DatFile/TechdataDat,Tech/[Index]의 [DatType] 값을 반환합니다.
 	Tech = ParseTech(Index)
@@ -215,7 +285,17 @@ DatFile
 @param.DatType.OrdersDat
 Parameter.
 @param.Index.Order
-Target order.
+Target order.
+
+@Language.zh-CN
+@Summary
+返回 [Index] 的 [DatType] 值。
+@Group
+DatFile
+@param.DatType.OrdersDat
+参数。
+@param.Index.Order
+目标指令。
 ]================================]
 function GetOrdersDat(DatType, Index) --DatFile/OrdersDat,Order/[Index]의 [DatType] 값을 반환합니다.
 	Order = ParseOrder(Index)
